@@ -1,15 +1,35 @@
 import { useSelector } from "react-redux";
+import {
+  NavigationStyled,
+  ListStyled,
+  ItemStyled,
+  LinkStyled,
+} from "./Navigation.styled.js";
 import authSelectors from "../../redux/auth/auth-selectors.js";
-import { NavigationStyled, LinkStyled } from "./Navigation.styled.js";
+import AuthNav from "../AuthNav/AuthNav";
+import UserMenu from "../UserMenu";
 
 const Navigation = () => {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
+
   return (
     <NavigationStyled>
-      <LinkStyled exact="true" to="/">
-        Home
-      </LinkStyled>
-      {isLoggedIn && <LinkStyled to="/store">Store</LinkStyled>}
+      <ListStyled>
+        <ItemStyled>
+          <LinkStyled aria-label="Home page" exact="true" to="/">
+            Home
+          </LinkStyled>
+        </ItemStyled>
+        <ItemStyled>
+          <AuthNav />
+        </ItemStyled>
+        {isLoggedIn && (
+          <>
+            <LinkStyled to="/store">Store</LinkStyled>
+            <UserMenu />
+          </>
+        )}
+      </ListStyled>
     </NavigationStyled>
   );
 };

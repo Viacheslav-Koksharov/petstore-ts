@@ -1,0 +1,19 @@
+{
+    "questions": [
+        {
+            "id": "1",
+            "question": "Can dogs eat cooked pork meat",
+            "answer": "Yes, pork is a great protein high in micronutrients and recommended for fussy-eaters."
+        },
+        {
+            "id": "2",
+            "question": "How to feed cooked pork to your dog",
+            "answer": "It can be mixed in with their meal or given as a treat on its own."
+        },
+        {
+            "id": "3",
+            "question": "How much cooked pork meat can a dog eat?",
+            "answer": "That depends on the size of the dog. Only pork meat is not a balanced meal and should be combined with organs, vegetables, seeds and if necessary, certain supplements to reach nutrient requirements. PetCubes includes pork meat and organs with beneficial plants to provide optimized nutrient concentrations."
+        }
+    ]
+}

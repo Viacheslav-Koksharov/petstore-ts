@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "src": "https://www.zooapteka.kiev.ua/image/cache/data/brand/royal-canin-new-100x100.jpg",
+            "alt": "Royal Canin"
+        },
+        {
+            "src": "https://www.zooapteka.kiev.ua/image/cache/data/brand/belcando-logo-100x100.png",
+            "alt": "Belcando"
+        },
+        {
+            "src": "https://www.zooapteka.kiev.ua/image/cache/data/brand/schesir-logo-100x100.jpg",
+            "alt": "Schesir"
+        },
+        {
+            "src": "https://www.zooapteka.kiev.ua/image/cache/data/brand/gourmet_gold_logo-100x100.jpg",
+            "alt": "Gourmet"
+        },
+        {
+            "src": "https://www.zooapteka.kiev.ua/image/cache/data/brand/canina-logo-100x100.jpg",
+            "alt": "canina"
+        },
+        {
+            "src": "https://www.zooapteka.kiev.ua/image/cache/data/brand/Bayer-Logo-100x100.gif",
+            "alt": "Bayer"
+        },
+        {
+            "src": "https://www.zooapteka.kiev.ua/image/cache/data/brand/trixie-logo-100x100.jpg",
+            "alt": "Trixie"
+        },
+        {
+            "src": "https://www.zooapteka.kiev.ua/image/cache/data/brand/merial-logo-100x100.jpg",
+            "alt": "Merial"
+        },
+        {
+            "src": "https://www.zooapteka.kiev.ua/image/cache/data/brand/josera-logo-new-100x100.jpg",
+            "alt": "Josera"
+        },
+        {
+            "src": "https://www.zooapteka.kiev.ua/image/cache/data/brand/beaphar-logo1-100x100.jpg",
+            "alt": "Beaphar"
+        }
+    ]
+}
