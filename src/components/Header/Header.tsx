@@ -1,5 +1,5 @@
 import { HeaderStyled } from './Header.styled';
-import banner from '../../mocks/banner.json';
+import banner from '../../mocks/data/banner.json';
 import Banner from '../Banner';
 import Navigation from "../Navigation/Navigation";
 

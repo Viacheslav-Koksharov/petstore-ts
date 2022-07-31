@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+
+interface Props {
+  staticLinks?: boolean;
+}
 
 const FooterStyled = styled.footer`
     padding: 20px;
@@ -17,13 +22,37 @@ const TitleStyled = styled.p`
 const ListStyled = styled.ul`
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: ${(props: Props) => (props.staticLinks ? "350px" : "200px")};
 `;
 
 const ItemStyled = styled.li``;
 
 const LinkStyled = styled.a`
-    display: inline-block;    
+    display: inline-block;
+    
+    :hover {
+        transform: scale(1.1);
+    }
+`;
+
+const NavLinkStyled = styled(NavLink)`
+    display: inline-block;
+    padding: 10px;
+    color: #708db3;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    :hover {
+        transform: scale(1.1);
+    }
+`;
+
+const TextStyled = styled.p`
+    margin-top: 20px;
+    color: #708db3;
+    font-size: 10px;
+    font-weight: 500;
 `;
 
 const iconStyle = {
@@ -32,4 +61,4 @@ const iconStyle = {
     color: '#708db3'
 }
 
-export { FooterStyled, TitleStyled, ListStyled, ItemStyled, LinkStyled, iconStyle };
+export { FooterStyled, TitleStyled, ListStyled, ItemStyled, LinkStyled, NavLinkStyled, TextStyled, iconStyle };

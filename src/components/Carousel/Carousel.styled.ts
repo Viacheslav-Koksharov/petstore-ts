@@ -3,11 +3,18 @@ import styled from "styled-components";
 const ButtonStyled = styled.button`
     width: 50px;
     height: 50px;
+
+    :hover {
+        transform: scale(1.2);
+    }
 `;
 
 const ListStyled = styled.ul`
     display: flex;
     width: 2000px;
+    transition-duration: 500ms;
+
+    transition-property: transform;
 `;
 
 const ItemStyled = styled.li`

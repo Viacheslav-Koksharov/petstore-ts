@@ -5,14 +5,16 @@ interface Props {
   main?: boolean;
   background?: boolean;
   carousel?: boolean;
+  flex?: boolean;
 }
 
-const Container = ({ children, main, background, carousel }: Props) => {
+const Container = ({ children, main, background, carousel, flex }: Props) => {
   return (
     <ContainerStyled
       main={main}
       background={background}
-      carousel={carousel}>
+      carousel={carousel}
+      flex={flex}>
       {children}
     </ContainerStyled>
   );

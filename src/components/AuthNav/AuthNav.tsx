@@ -1,4 +1,4 @@
-import authNav from '../../mocks/auth-nav.json';
+import authNav from '../../mocks/data/auth-nav.json';
 import { ListStyled, ItemStyled, LinkStyled } from "./AuthNav.styled";
 
 const AuthNav = () => {

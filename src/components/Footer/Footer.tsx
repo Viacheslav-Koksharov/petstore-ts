@@ -1,16 +1,25 @@
 import { IconContext } from 'react-icons';
 import { FaFacebook, FaLinkedin, FaInstagram, FaTwitter, FaPinterest } from 'react-icons/fa';
-import { FooterStyled, TitleStyled, ListStyled, ItemStyled, LinkStyled, iconStyle } from './Footer.styled';
+import { FooterStyled, TitleStyled, ListStyled, ItemStyled, LinkStyled, NavLinkStyled, TextStyled, iconStyle } from './Footer.styled';
+import staticLinks from '../../mocks/data/static-links.json';
+import Container from '../Container';
 
-interface Props {
-    message: string;
+interface IContent {
+    title: string;
+    text: string;
 }
 
-const Footer = ({ message }: Props) => {
+interface IProps {
+    content: IContent;
+    staticLinks?: boolean;
+}
+
+const Footer = ({ content }: IProps) => {
     return (
         <FooterStyled>
-            <TitleStyled>{message}</TitleStyled>
-            <ListStyled>
+            <TitleStyled>{content.title}</TitleStyled>
+            <Container flex>
+                <ListStyled>
                     <ItemStyled key="facebook">
                         <LinkStyled href="https://www.facebook.com/" aria-label="facebook" target="blank">
                             <IconContext.Provider value={{ style: iconStyle }}>
@@ -45,7 +54,16 @@ const Footer = ({ message }: Props) => {
                             </IconContext.Provider>
                         </LinkStyled>
                     </ItemStyled>
-           </ListStyled>
+                </ListStyled>
+                <ListStyled staticLinks>{
+                    staticLinks.map(link => (
+                        <ItemStyled key={link}>
+                            <NavLinkStyled aria-label={link} to={`/${link}`}>{link}</NavLinkStyled>
+                        </ItemStyled>
+                    ))
+                }</ListStyled>
+            </Container>
+            <TextStyled>{content.text}</TextStyled>
         </FooterStyled>
     )
 }

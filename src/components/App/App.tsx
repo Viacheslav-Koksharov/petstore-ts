@@ -2,8 +2,8 @@ import { Suspense, useEffect, lazy } from "react";
 import { useDispatch, useSelector}  from "react-redux";
 import { Routes, Route } from "react-router-dom";
 import { fetchCurrentUser } from "../../redux/auth/auth-operations.js";
-import message from '../../mocks/footer-message.json';
-import tagline from '../../mocks/tagline.json';
+import content from '../../mocks/data/footer-content.json';
+import tagline from '../../mocks/data/tagline.json';
 import authSelectors from "../../redux/auth/auth-selectors.js";
 import Container from "../Container";
 import Header from '../Header';
@@ -13,6 +13,15 @@ import PublicRoute from "../Routes/PublicRoute.js";
 
 const HomeView = lazy(() =>
   import("../../views/HomeView/HomeView" /* webpackChunkName: "HomeView" */)
+);
+const CustomerServiceView = lazy(() =>
+  import("../../views/CustomerServiceView/CustomerService" /* webpackChunkName: "CustomerServiceView" */)
+);
+const PrivicyPolicyView = lazy(() =>
+  import("../../views/PrivicyPolicyView/PrivicyPolicy" /* webpackChunkName: "PrivicyPolicyView" */)
+);
+const TermsAndConditionsView = lazy(() =>
+  import("../../views/TermsAndConditionsView/TermsAndConditions" /* webpackChunkName: "TermsAndConditionsView" */)
 );
 const RegisterView = lazy(() =>
   import("../../views/RegisterView/RegisterView" /* webpackChunkName: "RegisterView" */)
@@ -44,7 +53,16 @@ export default function App() {
                   tagline={tagline.tagline}
                   message={tagline.message}
                   conditions={tagline.conditions}
-                />}
+              />}
+              />
+              <Route path="/customer service" element={
+                <CustomerServiceView/>}
+              />
+              <Route path="/privicy policy" element={
+                <PrivicyPolicyView/>}
+              />
+              <Route path="/terms and conditions" element={
+                <TermsAndConditionsView/>}
               />
               <Route
                 path="/register"
@@ -72,7 +90,7 @@ export default function App() {
               />
             </Routes>
           </Suspense>
-          <Footer message={message.text} />
+          <Footer content={content} />
         </Container> 
       )}  
     </>

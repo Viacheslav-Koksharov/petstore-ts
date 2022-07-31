@@ -4,11 +4,15 @@ interface Props {
   main?: boolean;
   background?: boolean;
   carousel?: boolean;
+  flex?: boolean;
 }
 
 const ContainerStyled = styled.div`
   position: ${(props: Props) => (props.background ? "fixed" : "static")};
   top: ${(props: Props) => (props.background ? "140px" : "0")};
+  display: ${(props: Props) => (props.flex ? "flex" : "block")};
+  justify-content: ${(props: Props) => (props.flex ? "space-between" : "none")};
+  align-items: ${(props: Props) => (props.flex ? "center" : "none")};
   width: ${(props: Props) => (props.carousel ? "680px" : "100%")};
   height: ${(props: Props) => (props.background ? "700px" : "auto")};
   margin: ${(props: Props) => (props.main ? '120px auto 0' : '0')};
