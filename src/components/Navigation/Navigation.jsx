@@ -5,7 +5,8 @@ import {
   ItemStyled,
   LinkStyled,
 } from "./Navigation.styled.js";
-import authSelectors from "../../redux/auth/auth-selectors.js";
+import authSelectors from "../../redux/auth/auth-selectors";
+import PublicNav from "../PublicNav";
 import AuthNav from "../AuthNav/AuthNav";
 import UserMenu from "../UserMenu";
 
@@ -16,9 +17,7 @@ const Navigation = () => {
     <NavigationStyled>
       <ListStyled>
         <ItemStyled>
-          <LinkStyled aria-label="Home page" exact="true" to="/">
-            Home
-          </LinkStyled>
+          <PublicNav />
         </ItemStyled>
         <ItemStyled>
           <AuthNav />

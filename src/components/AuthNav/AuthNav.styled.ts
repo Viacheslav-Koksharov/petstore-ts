@@ -21,8 +21,8 @@ const LinkStyled = styled(NavLink)`
   }
 
   :hover {
-        transform: scale(1.1);
-    }
+    transform: scale(1.1);
+  }
 `;
 
 export { ListStyled, ItemStyled, LinkStyled };

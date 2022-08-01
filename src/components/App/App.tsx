@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { fetchCurrentUser } from "../../redux/auth/auth-operations.js";
 import content from '../../mocks/data/footer-content.json';
 import tagline from '../../mocks/data/tagline.json';
-import authSelectors from "../../redux/auth/auth-selectors.js";
+import authSelectors from "../../redux/auth/auth-selectors";
 import Container from "../Container";
 import Header from '../Header';
 import Footer from '../Footer';
@@ -13,6 +13,9 @@ import PublicRoute from "../Routes/PublicRoute.js";
 
 const HomeView = lazy(() =>
   import("../../views/HomeView/HomeView" /* webpackChunkName: "HomeView" */)
+);
+const OffersView = lazy(() =>
+  import("../../views/OffersView/OffersView" /* webpackChunkName: "OffersView" */)
 );
 const CustomerServiceView = lazy(() =>
   import("../../views/CustomerServiceView/CustomerService" /* webpackChunkName: "CustomerServiceView" */)
@@ -54,6 +57,9 @@ export default function App() {
                   message={tagline.message}
                   conditions={tagline.conditions}
               />}
+              />
+              <Route path="/offers" element={
+                <OffersView/>}
               />
               <Route path="/customer service" element={
                 <CustomerServiceView/>}
