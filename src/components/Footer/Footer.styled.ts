@@ -8,7 +8,7 @@ interface Props {
 const FooterStyled = styled.footer`
     padding: 20px;
     background-color: white;
-    border-top: 1px solid #708db3;  
+    border-top: 1px solid #708db3;
 `;
 
 const TitleStyled = styled.p`
@@ -29,7 +29,7 @@ const ItemStyled = styled.li``;
 
 const LinkStyled = styled.a`
     display: inline-block;
-    
+
     :hover {
         transform: scale(1.1);
     }

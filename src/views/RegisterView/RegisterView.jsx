@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { register } from "../../redux/auth/auth-operations.js";
+import { register } from "../../redux/auth/auth-operations";
 import { Form, Label, Input, Button } from "./RegisterView.styled.js";
 
 export default function RegisterView() {

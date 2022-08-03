@@ -1,7 +1,7 @@
 import { Suspense, useEffect, lazy } from "react";
 import { useDispatch, useSelector}  from "react-redux";
 import { Routes, Route } from "react-router-dom";
-import { fetchCurrentUser } from "../../redux/auth/auth-operations.js";
+import { fetchCurrentUser } from "../../redux/auth/auth-operations";
 import content from '../../mocks/data/footer-content.json';
 import tagline from '../../mocks/data/tagline.json';
 import authSelectors from "../../redux/auth/auth-selectors";
@@ -42,9 +42,9 @@ export default function App() {
   useEffect(() => {
     dispatch(fetchCurrentUser());
   }, [dispatch]);
-  
+
   return (
-    <>  
+    <>
       {!isFetchingCurrentUser && (
         <Container main>
           <Container background></Container>
@@ -79,7 +79,7 @@ export default function App() {
                 }
               />
               <Route
-                path="/login"              
+                path="/login"
                 element={
                   <PublicRoute redirectTo="/store" restricted>
                     <LoginView />
@@ -97,8 +97,8 @@ export default function App() {
             </Routes>
           </Suspense>
           <Footer content={content} />
-        </Container> 
-      )}  
+        </Container>
+      )}
     </>
  );
 }

@@ -15,7 +15,7 @@ const Sidebar = () => {
                 allCategories.push(item.category)
             }
         }
-        setCategories(allCategories)   
+        setCategories(allCategories)
     }, [])
 
     return (

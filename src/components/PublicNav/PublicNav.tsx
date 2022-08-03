@@ -6,7 +6,7 @@ const PublicNav = () => {
         <ListStyled>{
             links.map(link => (
                 <ItemStyled key={link}>
-                    {link === 'home' 
+                    {link === 'home'
                     ? <LinkStyled aria-label={link} to='/'>{link}</LinkStyled>
                     : <LinkStyled aria-label={link} to={`/${link}`}>{link}</LinkStyled>}
                 </ItemStyled>

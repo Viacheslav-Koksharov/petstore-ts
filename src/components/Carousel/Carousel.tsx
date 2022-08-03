@@ -27,8 +27,8 @@ const Carousel = () => {
             if (btnNext && btnNext?.hasAttribute('style')) {
                 btnNext.removeAttribute('style');
             }
-            setStep(prevState => prevState - 1); 
-        } 
+            setStep(prevState => prevState - 1);
+        }
     }
 
     const onButtonNextClick = (e: React.MouseEvent) => {
@@ -51,7 +51,7 @@ const Carousel = () => {
     const defineRule = () => {
         let value = 0;
 
-        if (step) {            
+        if (step) {
             value = -width*step;
             return `translate(${value}px, 0%)`;
         }

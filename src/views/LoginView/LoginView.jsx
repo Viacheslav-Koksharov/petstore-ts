@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../../redux/auth/auth-operations.js";
+import { login } from "../../redux/auth/auth-operations";
 import { Form, Label, Input, Button } from "./LoginView.styled.js";
 
 export default function LoginView() {

@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+import {useSelector as rawUseSelector, TypedUseSelectorHook} from "react-redux";
 import {
   persistStore,
   persistReducer,
@@ -31,3 +32,7 @@ export const store = configureStore({
 });
 
 export const persistor = persistStore(store);
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+export const useSelector: TypedUseSelectorHook<RootState> = rawUseSelector;
