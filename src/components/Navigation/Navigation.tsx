@@ -2,9 +2,8 @@ import { useSelector } from "react-redux";
 import {
   NavigationStyled,
   ListStyled,
-  ItemStyled,
   LinkStyled,
-} from "./Navigation.styled.js";
+} from "./Navigation.styled";
 import authSelectors from "../../redux/auth/auth-selectors";
 import PublicNav from "../PublicNav";
 import AuthNav from "../AuthNav/AuthNav";
@@ -16,17 +15,14 @@ const Navigation = () => {
   return (
     <NavigationStyled>
       <ListStyled>
-        <ItemStyled>
-          <PublicNav />
-        </ItemStyled>
-        <ItemStyled>
-          <AuthNav />
-        </ItemStyled>
-        {isLoggedIn && (
+        <PublicNav />
+        {isLoggedIn ? (
           <>
             <LinkStyled to="/store">Store</LinkStyled>
             <UserMenu />
           </>
+        ) : (
+          <AuthNav />
         )}
       </ListStyled>
     </NavigationStyled>

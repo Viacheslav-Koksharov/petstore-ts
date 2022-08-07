@@ -1,6 +1,6 @@
 import { IconContext } from 'react-icons';
 import { FaFacebook, FaLinkedin, FaInstagram, FaTwitter, FaPinterest } from 'react-icons/fa';
-import { FooterStyled, TitleStyled, ListStyled, ItemStyled, LinkStyled, NavLinkStyled, TextStyled, iconStyle } from './Footer.styled';
+import { FooterStyled, TitleStyled, ListStyled, ItemStyled, LinkStyled, StaticLinkStyled, TextStyled, iconStyle } from './Footer.styled';
 import staticLinks from '../../mocks/data/static-links.json';
 import Container from '../Container';
 
@@ -58,7 +58,7 @@ const Footer = ({ content }: IProps) => {
                 <ListStyled staticLinks>{
                     staticLinks.map(link => (
                         <ItemStyled key={link}>
-                            <NavLinkStyled aria-label={link} to={`/${link}`}>{link}</NavLinkStyled>
+                            <StaticLinkStyled aria-label={link} to={`/${link.replace(/ /g,"-")}`}>{link}</StaticLinkStyled>
                         </ItemStyled>
                     ))
                 }</ListStyled>

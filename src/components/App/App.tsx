@@ -2,14 +2,15 @@ import { Suspense, useEffect, lazy } from "react";
 import { useDispatch, useSelector}  from "react-redux";
 import { Routes, Route } from "react-router-dom";
 import { fetchCurrentUser } from "../../redux/auth/auth-operations";
+import Loader from '../Loader/Loader'
 import content from '../../mocks/data/footer-content.json';
 import tagline from '../../mocks/data/tagline.json';
 import authSelectors from "../../redux/auth/auth-selectors";
 import Container from "../Container";
 import Header from '../Header';
 import Footer from '../Footer';
-import PrivateRoute from "../Routes/PrivateRoute.js";
-import PublicRoute from "../Routes/PublicRoute.js";
+import PrivateRoute from "../Routes/PrivateRoute";
+import PublicRoute from "../Routes/PublicRoute";
 
 const HomeView = lazy(() =>
   import("../../views/HomeView/HomeView" /* webpackChunkName: "HomeView" */)
@@ -20,8 +21,8 @@ const OffersView = lazy(() =>
 const CustomerServiceView = lazy(() =>
   import("../../views/CustomerServiceView/CustomerService" /* webpackChunkName: "CustomerServiceView" */)
 );
-const PrivicyPolicyView = lazy(() =>
-  import("../../views/PrivicyPolicyView/PrivicyPolicy" /* webpackChunkName: "PrivicyPolicyView" */)
+const PrivacyPolicyView = lazy(() =>
+  import("../../views/PrivacyPolicyView/PrivacyPolicyView" /* webpackChunkName: "PrivacyPolicyView" */)
 );
 const TermsAndConditionsView = lazy(() =>
   import("../../views/TermsAndConditionsView/TermsAndConditions" /* webpackChunkName: "TermsAndConditionsView" */)
@@ -39,6 +40,7 @@ const StoreView = lazy(() =>
 export default function App() {
   const dispatch:any = useDispatch();
   const isFetchingCurrentUser = useSelector(authSelectors.getIsFetchingCurrent);
+
   useEffect(() => {
     dispatch(fetchCurrentUser());
   }, [dispatch]);
@@ -49,7 +51,15 @@ export default function App() {
         <Container main>
           <Container background></Container>
           <Header/>
-          <Suspense fallback={<p> Loading...</p>}>
+          <Suspense fallback={
+            <Loader
+              ariaLabel={'sss'}
+              height={100}
+              width={100}
+              radius={5}
+              color={'blue'}
+            />
+          }>
             <Routes>
               <Route path="/" element={
                 <HomeView
@@ -61,13 +71,13 @@ export default function App() {
               <Route path="/offers" element={
                 <OffersView/>}
               />
-              <Route path="/customer service" element={
+              <Route path="/customer-service" element={
                 <CustomerServiceView/>}
               />
-              <Route path="/privicy policy" element={
-                <PrivicyPolicyView/>}
+              <Route path="/privacy-policy" element={
+                <PrivacyPolicyView/>}
               />
-              <Route path="/terms and conditions" element={
+              <Route path="/terms-and-conditions" element={
                 <TermsAndConditionsView/>}
               />
               <Route

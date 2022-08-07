@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface Props {
   staticLinks?: boolean;
@@ -35,7 +35,7 @@ const LinkStyled = styled.a`
     }
 `;
 
-const NavLinkStyled = styled(NavLink)`
+const StaticLinkStyled = styled(Link)`
     display: inline-block;
     padding: 10px;
     color: #708db3;
@@ -61,4 +61,4 @@ const iconStyle = {
     color: '#708db3'
 }
 
-export { FooterStyled, TitleStyled, ListStyled, ItemStyled, LinkStyled, NavLinkStyled, TextStyled, iconStyle };
+export { FooterStyled, TitleStyled, ListStyled, ItemStyled, LinkStyled, StaticLinkStyled, TextStyled, iconStyle };

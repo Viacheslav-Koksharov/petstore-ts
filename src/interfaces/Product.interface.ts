@@ -8,7 +8,7 @@ interface INutrients {
     phosphorous?: string;
 }
 
-export default interface IProduct {
+interface IProduct {
     id: string;
     name: string;
     price: string;
@@ -20,3 +20,5 @@ export default interface IProduct {
     nutrients: INutrients;
     energy: string;
 }
+
+export type { IProduct };

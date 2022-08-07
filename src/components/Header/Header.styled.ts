@@ -5,6 +5,7 @@ const HeaderStyled = styled.header`
     top: 0;
     width: 100%;
     height: auto;
+    z-index: 999;
 `;
 
-export {HeaderStyled}
+export { HeaderStyled };

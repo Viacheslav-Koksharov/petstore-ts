@@ -1,13 +1,16 @@
 import { MainStyled } from './OffersView.styled';
+import { ProductsProvider } from '../../context/ProductsContextProvider';
 import Sidebar from '../../components/Sidebar';
 import ProductsList from '../../components/ProductsList';
 
 const OffersView = () => {
     return (
-        <MainStyled>
-            <Sidebar />
-            <ProductsList/>
-        </MainStyled>
+        <ProductsProvider>
+            <MainStyled>
+                <Sidebar offers/>
+                <ProductsList cost/>
+            </MainStyled>
+        </ProductsProvider>
     )
 }
 

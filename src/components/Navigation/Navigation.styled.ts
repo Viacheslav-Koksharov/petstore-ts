@@ -13,8 +13,6 @@ const ListStyled = styled.ul`
   justify-content: space-between;
 `;
 
-const ItemStyled = styled.li``;
-
 const LinkStyled = styled(NavLink)`
   display: inline-block;
   padding: 10px;
@@ -33,4 +31,4 @@ const LinkStyled = styled(NavLink)`
   }
 `;
 
-export { NavigationStyled, ListStyled, ItemStyled, LinkStyled };
+export { NavigationStyled, ListStyled, LinkStyled };
