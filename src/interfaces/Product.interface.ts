@@ -21,4 +21,4 @@ interface IProduct {
     energy: string;
 }
 
-export type { IProduct };
+export type { IProduct, INutrients };
