@@ -1,10 +1,13 @@
 import { useState, createContext } from "react";
-import { IProduct } from '../interfaces/Product.interface';
-import { IProductsContext, IProductsContextProps } from '../interfaces/ProductContext.interface';
+import { IProduct } from "../interfaces/Product.interface";
+import {
+  IProductsContext,
+  IProductsContextProps,
+} from "../interfaces/ProductContext.interface";
 
-const productsContext = createContext<IProductsContext>({
+const ProductsContext = createContext<IProductsContext>({
   filteredProducts: [],
-  setFilteredProducts: () => {}
+  setFilteredProducts: () => {},
 });
 
 const ProductsProvider = ({ children }: IProductsContextProps) => {
@@ -12,10 +15,14 @@ const ProductsProvider = ({ children }: IProductsContextProps) => {
 
   const sampleProductsContext: IProductsContext = {
     filteredProducts,
-    setFilteredProducts
+    setFilteredProducts,
   };
 
-  return <productsContext.Provider value={sampleProductsContext}>{children}</productsContext.Provider>;
+  return (
+    <ProductsContext.Provider value={sampleProductsContext}>
+      {children}
+    </ProductsContext.Provider>
+  );
 };
 
-export { productsContext, ProductsProvider };
+export { ProductsContext, ProductsProvider };

@@ -42,24 +42,23 @@ const TextContainerStyled = styled.div`
 `;
 
 const TitleStyled = styled.p`
- margin: 0 0 30px 0;
- font-size: 32px;
- font-weight: bold;
+  margin: 0 0 30px 0;
+  font-size: 32px;
+  font-weight: bold;
 `;
 
 const BrandStyle = styled.p`
-margin: 0 0 30px 0;
-font-size: 26px;
- font-weight: bold;
+  margin: 0 0 30px 0;
+  font-size: 26px;
+  font-weight: bold;
 `;
 
 const List = styled.ul`
-display:flex;
-margin: 0 0 20px 0;
-align-items: center;
-justify-content: space-evenly;
-box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
-    0 1px 10px 0 rgb(0 0 0 / 12%);
+  display:flex;  
+  margin: 0 0 20px 0;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),0 1px 10px 0 rgb(0 0 0 / 12%);
 `;
 
 const LinkItem = styled(Link)`

@@ -1,14 +1,8 @@
 import { BallTriangle } from "react-loader-spinner";
 import { ContainerStyled, SpinnerStyled } from "./Loader.styled";
+import { ILoader } from "../../interfaces/Loader.interfaces";
 
-interface Props {
-  ariaLabel: string;
-  height: string | number;
-  width: string | number;
-  radius: string | number;
-  color: string;
-}
-const Loader = ({ ariaLabel, height, width, radius, color }: Props) => {
+const Loader = ({ ariaLabel, height, width, radius, color }: ILoader) => {
   return (
     <>
       <ContainerStyled>

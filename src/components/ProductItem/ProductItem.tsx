@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useNavigate, useParams, Outlet } from "react-router-dom";
-import Button from "../Button/Button";
 import {
   MainStyled,
   GoBackButton,
@@ -15,20 +14,50 @@ import {
 } from "./ProductItem.styled";
 import products from "../../mocks/data/products.json";
 import { IProduct } from "../../interfaces/Product.interface";
+import { BasketContext } from "../../context/BasketContextProvider";
+import Button from "../Button/Button";
+
+const getInitialBasketState = () => {
+  const cart = localStorage.getItem("basket");
+  return cart ? JSON.parse(cart) : [];
+};
 
 const ProductItem = () => {
-  const { offersId } = useParams();
   const [product, setProduct] = useState<IProduct>();
+  const [items, setItems] = useState<IProduct[]>(getInitialBasketState);
+  const { setBasketItems } = useContext(BasketContext);
+  const { offersId } = useParams();
+  const navigate = useNavigate();
 
-  let navigate = useNavigate();
+  useEffect(() => {
+    const cart = localStorage.getItem("basket");
+    if (cart) {
+      setItems(JSON.parse(cart));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("basket", JSON.stringify(items));
+    setBasketItems(items);
+  }, [items, setBasketItems]);
+
+  useEffect(() => {
+    const currentItem = products.find(({ id }) => id === offersId);
+    setProduct(currentItem);
+  }, [offersId]);
+
+  function handleSubmit() {
+    const item: IProduct | undefined = product;
+    if (item) {
+      item.quantity = 1;
+    }
+    // @ts-ignore
+    setItems([...items, item]);
+  }
+
   function handleClick() {
     navigate("/offers");
   }
-
-  useEffect(() => {
-    const currentItem = products.find((item) => item.id === offersId);
-    setProduct(currentItem);
-  }, [offersId]);
 
   return (
     <>
@@ -42,7 +71,11 @@ const ProductItem = () => {
             <TitleStyled>{product?.name}</TitleStyled>
             <TitleStyled>{product?.price}</TitleStyled>
             <BrandStyle>Manufacturer: {product?.manufacturer}</BrandStyle>
-            <Button style={button} aria-label="add to cart">
+            <Button
+              style={button}
+              aria-label="add to cart"
+              onClick={handleSubmit}
+            >
               add to cart
             </Button>
             <List>

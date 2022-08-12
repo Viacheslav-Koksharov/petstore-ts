@@ -1,75 +1,46 @@
-import { useState } from "react";
-import Modal from "react-modal";
+import { useContext } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { IconContext } from "react-icons";
-import authSelectors from "../../redux/auth/auth-selectors";
-import { logOut } from "../../redux/auth/auth-operations";
 import { FaShoppingCart } from "react-icons/fa";
 import {
   NavigationStyled,
   ButtonCart,
   iconStyle,
   Text,
-  Button,
+  ButtonOut,
   ContainerCounter,
-  Counter,
-  ModalTitle,
-  ContainerButton,
+  ItemsCounter,
 } from "./UserMenu.styled";
-
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    width: "400px",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-  },
-};
+import authSelectors from "../../redux/auth/auth-selectors";
+import { logOut } from "../../redux/auth/auth-operations";
+import { ModalContext } from "../../context/ModalContextProvider";
+import { BasketContext } from "../../context/BasketContextProvider";
+import CustomModal from "../CustomModal";
+import Cart from "../Cart";
 
 const UserMenu = () => {
-  const [modalIsOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
   const name = useSelector(authSelectors.getUsername);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
+  const { openModal } = useContext(ModalContext);
+  const { basketItems } = useContext(BasketContext);
 
   return (
     <NavigationStyled>
       <Text>willkommen, {name || "quest"}!</Text>
-      <Button type="button" onClick={() => dispatch(logOut())}>
+      <ButtonOut type="button" onClick={() => dispatch(logOut())}>
         Log out
-      </Button>
+      </ButtonOut>
+      <CustomModal>
+        <Cart />
+      </CustomModal>
       <ButtonCart onClick={openModal}>
         <IconContext.Provider value={{ style: { ...iconStyle } }}>
           <FaShoppingCart />
         </IconContext.Provider>
         <ContainerCounter>
-          <Counter>3</Counter>
+          <ItemsCounter>{basketItems.length}</ItemsCounter>
         </ContainerCounter>
       </ButtonCart>
-      <Modal
-        isOpen={modalIsOpen}
-        ariaHideApp={false}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Modal Cart"
-      >
-        <ModalTitle>Your Order</ModalTitle>
-        <Text>I am a modal</Text>
-        <ContainerButton>
-          <Button onClick={closeModal}>Continue</Button>
-          <Button onClick={closeModal}>close</Button>
-        </ContainerButton>
-      </Modal>
     </NavigationStyled>
   );
 };

@@ -19,6 +19,7 @@ interface IProduct {
     ingredients: string;
     nutrients: INutrients;
     energy: string;
+    quantity?: number;
 }
 
-export type { IProduct, INutrients };
+export type { INutrients, IProduct };

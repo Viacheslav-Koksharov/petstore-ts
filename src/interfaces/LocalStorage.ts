@@ -1,6 +1,6 @@
 interface ILocalStorage {
   key: string;
-  defaultValue: string;
+  defaultValue: [];
 }
 
 export type { ILocalStorage };

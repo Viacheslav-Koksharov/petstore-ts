@@ -7,7 +7,6 @@ const getIsFetchingCurrent = (state: RootState) => state.auth.isFetchingCurrentU
 const authSelectors = {
   getIsLoggedIn,
   getUsername,
-
   getIsFetchingCurrent,
 };
 

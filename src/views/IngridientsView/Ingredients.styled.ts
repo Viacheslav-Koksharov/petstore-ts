@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-const TitleStyled = styled.h2`
- margin: 0 auto;
- text-align: center;
+const TextStyled = styled.div`
+    height:150px;
+    margin: 0 auto;
+    text-align: center;
 `;
 
-export { TitleStyled };
+export { TextStyled };

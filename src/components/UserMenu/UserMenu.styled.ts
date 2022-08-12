@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 const NavigationStyled = styled.nav`
   display: flex;
   flex-wrap: wrap;
@@ -10,17 +9,16 @@ const NavigationStyled = styled.nav`
 
 const Text = styled.p`
   margin: 0;
-    color: #708db3;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
+  color: #708db3;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
 `;
 
-const Button = styled.button`
-
+const ButtonOut = styled.button`
   display: flex;
   padding: 10px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 20px;
   color: #708db3;
   font-size: 18px;
   font-weight: 700;
@@ -32,9 +30,10 @@ const Button = styled.button`
     transform: scale(1.1);
   }
 `;
+
 const ButtonCart = styled.button`
-position: relative;
- display: flex;
+  position: relative;
+  display: flex;
   padding: 0;
   margin: 0 0 0 10px;
   width: 40px;
@@ -47,6 +46,7 @@ position: relative;
     transform: scale(1.1);
   }
 `;
+
 const iconStyle = {
   position: 'absolute',
   top: '20%',
@@ -57,38 +57,41 @@ const iconStyle = {
   height: '25px',
   color: '#708db3'
 }
+
 const ContainerCounter = styled.div`
-position: absolute;
-top: 0;
-right: 0;
-width: 16px;
-height: 16px;
-line-height: 1;
-border-radius: 50%;
-padding: 0 4px;
-background: rgb(223 113 113 / 20%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  line-height: 1;
+  border-radius: 50%;
+  padding: 0 4px;
+  background: rgb(223 113 113 / 20%);
 }`;
 
-const Counter = styled.small`
-position: absolute;
-top:10%;
-left:30%;
-font-size: 80%;
-font-weight: 400;
+const ItemsCounter = styled.small`
+  position: absolute;
+  top:10%;
+  left:30%;
+  font-size: 80%;
+  font-weight: 400;
 `;
+
 const ModalTitle = styled.h2`
-margin: 0;
-    color: #708db3;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
+  margin: 0;
+  color: #708db3;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
 `;
+
 const ContainerButton = styled.div`
-display:flex;
-align-items: center;
+  display:flex;
+  align-items: center;
   justify-content: space-between;
 `;
 
 
-export { NavigationStyled, ButtonCart, iconStyle, Text, Button, ModalTitle, ContainerCounter, ContainerButton, Counter };
+export { NavigationStyled, ButtonCart, iconStyle, Text, ButtonOut, ModalTitle, ContainerCounter, ContainerButton, ItemsCounter };

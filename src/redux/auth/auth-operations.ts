@@ -7,6 +7,7 @@ axios.defaults.baseURL = "https://connections-api.herokuapp.com";
 interface Itoken {
   token: string;
 }
+
 const token = {
   set(token: Itoken) {
     axios.defaults.headers.common.Authorization = `Bearer ${token}`;

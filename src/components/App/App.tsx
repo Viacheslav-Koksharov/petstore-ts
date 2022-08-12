@@ -1,11 +1,12 @@
 import { Suspense, useEffect, lazy } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route } from "react-router-dom";
+import { BasketProvider } from "../../context/BasketContextProvider";
 import { fetchCurrentUser } from "../../redux/auth/auth-operations";
-import Loader from "../Loader/Loader";
 import content from "../../mocks/data/footer-content.json";
 import tagline from "../../mocks/data/tagline.json";
 import authSelectors from "../../redux/auth/auth-selectors";
+import Loader from "../Loader/Loader";
 import Container from "../Container";
 import ProductItem from "../ProductItem";
 import Header from "../Header";
@@ -62,6 +63,10 @@ const StoreView = lazy(
       "../../views/StoreView/StoreView" /* webpackChunkName: "StoreView" */
     )
 );
+const CartView = lazy(
+  () =>
+    import("../../views/CartView/CartView" /* webpackChunkName: "CartView" */)
+);
 
 export default function App() {
   const dispatch: any = useDispatch();
@@ -72,7 +77,7 @@ export default function App() {
   }, [dispatch]);
 
   return (
-    <>
+    <BasketProvider>
       {!isFetchingCurrentUser && (
         <Container main>
           <Container background></Container>
@@ -138,11 +143,19 @@ export default function App() {
                   </PrivateRoute>
                 }
               />
+              <Route
+                path="/cart"
+                element={
+                  <PrivateRoute redirectTo="/login">
+                    <CartView />
+                  </PrivateRoute>
+                }
+              />
             </Routes>
           </Suspense>
           <Footer content={content} />
         </Container>
       )}
-    </>
+    </BasketProvider>
   );
 }

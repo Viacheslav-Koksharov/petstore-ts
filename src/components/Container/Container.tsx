@@ -1,20 +1,20 @@
 import { ContainerStyled } from "./Container.styled";
+import { IContainer } from "../../interfaces/Container.interface";
 
-interface Props {
-  children?: React.ReactNode;
-  main?: boolean;
-  background?: boolean;
-  carousel?: boolean;
-  flex?: boolean;
-}
-
-const Container = ({ children, main, background, carousel, flex }: Props) => {
+const Container = ({
+  children,
+  main,
+  background,
+  carousel,
+  flex,
+}: IContainer) => {
   return (
     <ContainerStyled
       main={main}
       background={background}
       carousel={carousel}
-      flex={flex}>
+      flex={flex}
+    >
       {children}
     </ContainerStyled>
   );

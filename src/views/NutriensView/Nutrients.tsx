@@ -31,4 +31,5 @@ const Nutrients = () => {
     </ListStyled>
   );
 };
+
 export default Nutrients;
