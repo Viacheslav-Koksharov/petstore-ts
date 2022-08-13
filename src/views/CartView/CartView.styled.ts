@@ -1,24 +1,27 @@
 import styled from "styled-components";
 
 const MainStyled = styled.main`
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding:20px;
   background-color: white;
 `;
-const Button = styled.button`
-  display: flex;
-  padding: 10px;
-  margin: 0 auto;
+const CartTitle = styled.h2`
+  margin: 0 0 15px 0;
   color: #708db3;
+  text-align: center;
   font-size: 18px;
-  font-weight: 700;
-  text-transform: capitalize;
-  text-decoration: none;
-
-  &:hover {
-    box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
-    transform: scale(1.1);
-  }
+  font-weight: 500;
+  text-transform: uppercase;
 `;
-export { MainStyled, Button };
+
+const button = {
+  width: '150px',
+  height: '40px',
+  padding: '10px',
+  color: 'white',
+  backgroundColor: '#bbb1df',
+  margin: "0 auto"
+}
+export { MainStyled, button, CartTitle };

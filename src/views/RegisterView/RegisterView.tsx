@@ -10,18 +10,19 @@ import {
   Form,
   Label,
   Input,
-  Button,
   iconStyle,
   InputContainer,
+  button,
 } from "./RegisterView.styled";
+import Button from "../../components/Button";
 
 export default function RegisterView() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const dispatch:any = useDispatch();
+  const dispatch: any = useDispatch();
 
-  const handleChange = (e:any):void => {
+  const handleChange = (e: any): void => {
     const { name, value } = e.currentTarget;
     switch (name) {
       case "name":
@@ -38,7 +39,7 @@ export default function RegisterView() {
     }
   };
 
-  const handleSubmit = (e:any):void => {
+  const handleSubmit = (e: any): void => {
     e.preventDefault();
     dispatch(register({ name, email, password }));
     setName("");
@@ -59,7 +60,9 @@ export default function RegisterView() {
             onChange={handleChange}
             id="name"
           />
-          <IconContext.Provider value={{style:{...iconStyle, position: 'absolute'}}}>
+          <IconContext.Provider
+            value={{ style: { ...iconStyle, position: "absolute" } }}
+          >
             <FaUserAlt />
           </IconContext.Provider>
         </InputContainer>
@@ -72,7 +75,9 @@ export default function RegisterView() {
             onChange={handleChange}
             id="email"
           />
-          <IconContext.Provider value={{style:{...iconStyle, position: 'absolute'}}}>
+          <IconContext.Provider
+            value={{ style: { ...iconStyle, position: "absolute" } }}
+          >
             <AiTwotoneMail />
           </IconContext.Provider>
         </InputContainer>
@@ -85,11 +90,15 @@ export default function RegisterView() {
             onChange={handleChange}
             id="password"
           />
-          <IconContext.Provider value={{style:{...iconStyle, position: 'absolute'}}}>
+          <IconContext.Provider
+            value={{ style: { ...iconStyle, position: "absolute" } }}
+          >
             <FaPaw />
           </IconContext.Provider>
         </InputContainer>
-        <Button type="submit">Login</Button>
+        <Button style={button} type="submit">
+          Register
+        </Button>
       </Form>
     </MainStyled>
   );

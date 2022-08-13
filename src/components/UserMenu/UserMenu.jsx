@@ -2,12 +2,16 @@ import { useContext } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { IconContext } from "react-icons";
 import { FaShoppingCart } from "react-icons/fa";
+import { VscAccount } from "react-icons/vsc";
 import {
   NavigationStyled,
+  LinkStyled,
+  ButtonAccount,
+  accStyle,
   ButtonCart,
   iconStyle,
   Text,
-  ButtonOut,
+  button,
   ContainerCounter,
   ItemsCounter,
 } from "./UserMenu.styled";
@@ -15,6 +19,7 @@ import authSelectors from "../../redux/auth/auth-selectors";
 import { logOut } from "../../redux/auth/auth-operations";
 import { ModalContext } from "../../context/ModalContextProvider";
 import { BasketContext } from "../../context/BasketContextProvider";
+import Button from "../Button";
 import CustomModal from "../CustomModal";
 import Cart from "../Cart";
 
@@ -26,10 +31,17 @@ const UserMenu = () => {
 
   return (
     <NavigationStyled>
-      <Text>willkommen, {name || "quest"}!</Text>
-      <ButtonOut type="button" onClick={() => dispatch(logOut())}>
-        Log out
-      </ButtonOut>
+      <Text>
+        welcome,
+        <br /> {name || "quest"}!
+      </Text>
+      <LinkStyled to={`/account`}>
+        <ButtonAccount>
+          <IconContext.Provider value={{ style: { ...accStyle } }}>
+            <VscAccount />
+          </IconContext.Provider>
+        </ButtonAccount>
+      </LinkStyled>
       <CustomModal>
         <Cart />
       </CustomModal>
@@ -41,6 +53,9 @@ const UserMenu = () => {
           <ItemsCounter>{basketItems.length}</ItemsCounter>
         </ContainerCounter>
       </ButtonCart>
+      <Button type="button" style={button} onClick={() => dispatch(logOut())}>
+        Log out
+      </Button>
     </NavigationStyled>
   );
 };

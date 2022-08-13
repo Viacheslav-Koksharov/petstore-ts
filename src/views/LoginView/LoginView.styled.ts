@@ -41,25 +41,34 @@ const Input = styled.input`
     box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
   }
 `;
-const Button = styled.button`
-  display: flex;
-  padding: 10px;
-  margin: 0 auto;
-  color: #708db3;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: capitalize;
-  text-decoration: none;
+// const Button = styled.button`
+//   display: flex;
+//   padding: 10px;
+//   margin: 0 auto;
+//   color: rgb(187, 177, 223);
+//   background-color: 'rgb(187, 177, 223)',
+//   font-size: 18px;
+//   font-weight: 700;
+//   text-transform: capitalize;
+//   text-decoration: none;
 
-  &:hover {
-    box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
-    transform: scale(1.1);
-  }
-`;
+//   &:hover {
+//     box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+//     transform: scale(1.1);
+//   }
+// `;
 const iconStyle = {
   width: '30px',
   height: '30px',
   left: '10px',
   color: '#708db3'
 }
-export { MainStyled, Form, Label, Input, Button, iconStyle, InputContainer };
+const button = {
+  width: '120px',
+  height: '40px',
+  padding: '10px',
+  color: 'white',
+  backgroundColor: '#bbb1df',
+  margin: "0 120px"
+}
+export { MainStyled, Form, Label, Input, iconStyle, InputContainer, button };

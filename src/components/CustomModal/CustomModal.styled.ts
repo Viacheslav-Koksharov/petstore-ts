@@ -1,24 +1,16 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-const Button = styled.button`
-  display: flex;
-  padding: 10px;
-  margin: 0 0 0 0;
-  color: #708db3;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: capitalize;
-  text-decoration: none;
+const button = {
+  width: '150px',
+  height: '40px',
+  padding: '10px',
+  color: 'white',
+  backgroundColor: '#bbb1df',
 
-  &:hover {
-    box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
-    transform: scale(1.1);
-  }
-`;
-
+}
 const ModalTitle = styled.h2`
-  margin: 0;
+  margin: 0 0 15px 0;
   color: #708db3;
   text-align: center;
   font-size: 18px;
@@ -36,18 +28,13 @@ const LinkStyled = styled(NavLink)`
   display: inline-block;
   padding: 10px;
   color: #708db3;
-  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-
-  &.active {
-    box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
-      0 1px 10px 0 rgb(0 0 0 / 12%);
-  }
 `;
 
 const customStyles = {
   overlay: {
+    background: "rgba(47, 48, 58, 0.8)",
     zIndex: "1999"
   },
   content: {
@@ -62,4 +49,4 @@ const customStyles = {
   },
 };
 
-export { Button, ModalTitle, ContainerButton, customStyles, LinkStyled };
+export { button, ModalTitle, ContainerButton, customStyles, LinkStyled };

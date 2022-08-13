@@ -47,12 +47,17 @@ const ProductItem = () => {
   }, [offersId]);
 
   function handleSubmit() {
+    const itemIndex = items.findIndex(({ id }) => id === offersId);
     const item: IProduct | undefined = product;
-    if (item) {
-      item.quantity = 1;
+    if (itemIndex < 0) {
+      if (item) {
+        item.quantity = 1;
+      }
+      // @ts-ignore
+      setItems([...items, item]);
+    } else {
+      alert("Product is on the Basket");
     }
-    // @ts-ignore
-    setItems([...items, item]);
   }
 
   function handleClick() {

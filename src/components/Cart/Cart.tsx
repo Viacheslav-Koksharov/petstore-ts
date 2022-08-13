@@ -32,7 +32,7 @@ const Cart = ({ main }: ICart) => {
 
   const getTotal = (price: string, quantity: number | undefined) => {
     if (quantity) {
-      return Number(price.slice(1)) * quantity;
+      return (Number(price.slice(1)) * quantity).toFixed(2);
     }
   };
 

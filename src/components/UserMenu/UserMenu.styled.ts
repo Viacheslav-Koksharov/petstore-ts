@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NavigationStyled = styled.nav`
   display: flex;
@@ -6,24 +7,30 @@ const NavigationStyled = styled.nav`
   align-items: center;
   justify-content: space-between;
 `;
-
+const LinkStyled = styled(Link)`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
 const Text = styled.p`
   margin: 0;
+  width: 150px;
   color: #708db3;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
 `;
 
-const ButtonOut = styled.button`
+const ButtonAccount = styled.button`
+  position: relative;
   display: flex;
-  padding: 10px;
-  margin: 0 0 0 20px;
+  padding: 0;
+  margin: 0 0 0 10px;
+  width: 40px;
+  height: 40px;
   color: #708db3;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: capitalize;
-  text-decoration: none;
+  border-radius: 50%;
 
   &:hover {
     box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
@@ -56,6 +63,26 @@ const iconStyle = {
   width: '25px',
   height: '25px',
   color: '#708db3'
+}
+
+const accStyle = {
+  position: 'absolute',
+  top: '20%',
+  left: '20%',
+  margin: '0',
+  padding: '0',
+  width: '25px',
+  height: '25px',
+  color: '#708db3'
+}
+
+const button = {
+  width: '120px',
+  height: '40px',
+  padding: '10px',
+  color: 'white',
+  backgroundColor: '#bbb1df',
+  margin: "0 0 0 20px"
 }
 
 const ContainerCounter = styled.div`
@@ -94,4 +121,4 @@ const ContainerButton = styled.div`
 `;
 
 
-export { NavigationStyled, ButtonCart, iconStyle, Text, ButtonOut, ModalTitle, ContainerCounter, ContainerButton, ItemsCounter };
+export { NavigationStyled, LinkStyled, ButtonAccount, accStyle, ButtonCart, iconStyle, Text, button, ModalTitle, ContainerCounter, ContainerButton, ItemsCounter };

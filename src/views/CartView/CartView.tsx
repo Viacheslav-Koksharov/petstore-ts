@@ -1,11 +1,13 @@
+import { MainStyled, button, CartTitle } from "./CartView.styled";
 import Cart from "../../components/Cart/Cart";
-import { MainStyled, Button } from "./CartView.styled";
+import Button from "../../components/Button";
 
 const CartView = () => {
   return (
     <MainStyled>
+      <CartTitle>Please Check Your Order!</CartTitle>
       <Cart main />
-      <Button>Check out order</Button>
+      <Button style={button}>Check out order</Button>
     </MainStyled>
   );
 };

@@ -9,17 +9,18 @@ import {
   Form,
   Label,
   Input,
-  Button,
   iconStyle,
   InputContainer,
+  button,
 } from "./LoginView.styled";
+import Button from "../../components/Button";
 
 export default function LoginView() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const dispatch:any = useDispatch();
+  const dispatch: any = useDispatch();
 
-  const handleChange = (e:any):void => {
+  const handleChange = (e: any): void => {
     const { name, value } = e.currentTarget;
     switch (name) {
       case "email":
@@ -33,10 +34,10 @@ export default function LoginView() {
     }
   };
 
-  const handleSubmit = (e:any):void => {
+  const handleSubmit = (e: any): void => {
     e.preventDefault();
 
-    dispatch(login({email,password}));
+    dispatch(login({ email, password }));
     setEmail("");
     setPassword("");
   };
@@ -53,7 +54,9 @@ export default function LoginView() {
             onChange={handleChange}
             id="email"
           />
-        <IconContext.Provider value={{style:{...iconStyle, position: 'absolute'}}}>
+          <IconContext.Provider
+            value={{ style: { ...iconStyle, position: "absolute" } }}
+          >
             <AiTwotoneMail />
           </IconContext.Provider>
         </InputContainer>
@@ -66,11 +69,15 @@ export default function LoginView() {
             onChange={handleChange}
             id="password"
           />
-          <IconContext.Provider value={{style:{...iconStyle, position: 'absolute'}}}>
+          <IconContext.Provider
+            value={{ style: { ...iconStyle, position: "absolute" } }}
+          >
             <FaPaw />
           </IconContext.Provider>
         </InputContainer>
-        <Button type="submit">Login</Button>
+        <Button style={button} type="submit">
+          Login
+        </Button>
       </Form>
     </MainStyled>
   );

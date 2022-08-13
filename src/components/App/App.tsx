@@ -57,10 +57,10 @@ const LoginView = lazy(
       "../../views/LoginView/LoginView" /* webpackChunkName: "LoginView" */
     )
 );
-const StoreView = lazy(
+const AccountView = lazy(
   () =>
     import(
-      "../../views/StoreView/StoreView" /* webpackChunkName: "StoreView" */
+      "../../views/AccountView/AccountView" /* webpackChunkName: "AccountView" */
     )
 );
 const CartView = lazy(
@@ -122,7 +122,7 @@ export default function App() {
               <Route
                 path="/register"
                 element={
-                  <PublicRoute redirectTo="/store" restricted>
+                  <PublicRoute redirectTo="/offers" restricted>
                     <RegisterView />
                   </PublicRoute>
                 }
@@ -130,16 +130,16 @@ export default function App() {
               <Route
                 path="/login"
                 element={
-                  <PublicRoute redirectTo="/store" restricted>
+                  <PublicRoute redirectTo="/offers" restricted>
                     <LoginView />
                   </PublicRoute>
                 }
               />
               <Route
-                path="/store"
+                path="/account"
                 element={
                   <PrivateRoute redirectTo="/login">
-                    <StoreView />
+                    <AccountView />
                   </PrivateRoute>
                 }
               />

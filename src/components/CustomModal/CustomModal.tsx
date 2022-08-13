@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Modal from "react-modal";
 import {
-  Button,
+  button,
   ModalTitle,
   ContainerButton,
   customStyles,
@@ -9,6 +9,7 @@ import {
 } from "./CustomModal.styled";
 import { IModalContextProps } from "../../interfaces/ModalContext.interface";
 import { ModalContext } from "../../context/ModalContextProvider";
+import Button from "../../components/Button";
 
 const CustomModal = ({ children }: IModalContextProps) => {
   const { modalIsOpen, setIsOpen } = useContext(ModalContext);
@@ -28,9 +29,13 @@ const CustomModal = ({ children }: IModalContextProps) => {
       <ModalTitle>Your Order</ModalTitle>
       {children}
       <ContainerButton>
-        <Button onClick={closeModal}>Continue</Button>
+        <Button style={button} onClick={closeModal}>
+          Continue
+        </Button>
         <LinkStyled to={"/cart"}>
-          <Button onClick={closeModal}>Place order</Button>
+          <Button style={button} onClick={closeModal}>
+            Place order
+          </Button>
         </LinkStyled>
       </ContainerButton>
     </Modal>

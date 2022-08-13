@@ -18,7 +18,6 @@ const GoBackButton = styled.button`
   text-align: center;
   border: none;
   outline: none;
-  border-radius: 4px;
   cursor: pointer;
 
   &:hover {
