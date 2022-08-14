@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from "react";
+import { useSelector } from "react-redux";
 import { useNavigate, useParams, Outlet } from "react-router-dom";
 import {
   MainStyled,
@@ -15,6 +16,7 @@ import {
 import products from "../../mocks/data/products.json";
 import { IProduct } from "../../interfaces/Product.interface";
 import { BasketContext } from "../../context/BasketContextProvider";
+import authSelectors from "../../redux/auth/auth-selectors";
 import Button from "../Button/Button";
 
 const getInitialBasketState = () => {
@@ -23,6 +25,7 @@ const getInitialBasketState = () => {
 };
 
 const ProductItem = () => {
+  const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
   const [product, setProduct] = useState<IProduct>();
   const [items, setItems] = useState<IProduct[]>(getInitialBasketState);
   const { setBasketItems } = useContext(BasketContext);
@@ -47,16 +50,20 @@ const ProductItem = () => {
   }, [offersId]);
 
   function handleSubmit() {
-    const itemIndex = items.findIndex(({ id }) => id === offersId);
-    const item: IProduct | undefined = product;
-    if (itemIndex < 0) {
-      if (item) {
-        item.quantity = 1;
+    if (isLoggedIn) {
+      const itemIndex = items.findIndex(({ id }) => id === offersId);
+      const item: IProduct | undefined = product;
+      if (itemIndex < 0) {
+        if (item) {
+          item.quantity = 1;
+        }
+        // @ts-ignore
+        setItems([...items, item]);
+      } else {
+        alert("Product is on the Basket");
       }
-      // @ts-ignore
-      setItems([...items, item]);
     } else {
-      alert("Product is on the Basket");
+      navigate("/login");
     }
   }
 

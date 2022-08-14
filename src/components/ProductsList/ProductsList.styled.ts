@@ -6,6 +6,7 @@ const ListStyled = styled.ul`
     display: flex;
     flex-wrap: wrap;
     width: 70%;
+    height: 100%;
     padding: 40px;
 `;
 

@@ -9,7 +9,7 @@ const ListStyled = styled.ul`
 const ItemStyled = styled.li`
   display:flex;
   margin: 0 0 40px 0;
-  padding: 10px;
+  padding: 40px;
   align-items: center;
   box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
 `;
@@ -27,6 +27,7 @@ const TextStyled = styled.p`
   text-align: center;
   font-weight:700;
 `;
+
 const PriceStyled = styled.p`
   display: flex;
   width: ${(props: ICart) => (props.main ? "100px" : "150px")};
@@ -39,11 +40,12 @@ const ValueStyled = styled.p`
   display: flex;
   width: ${(props: ICart) => (props.main ? "100px" : "150px")};
   align-items: center;
+  margin-right: 10px;
   text-align: center;
   font-weight:700;
 `;
 
-const Button = styled.button`
+const ButtonStyled = styled.button`
   display: flex;
   padding: 10px;
   margin: 0 0 0 0;
@@ -59,7 +61,22 @@ const Button = styled.button`
   }
 `;
 
+const TotalStyled = styled.p`
+  margin-bottom: 30px;
+  text-align: center;
+  color: #708db3;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+`;
+
+const iconStyle = {
+  width: '30px',
+  height: '30px',
+  color: '#708db3'
+}
+
 export {
   ListStyled, ItemStyled, ImageContainerStyled, TextStyled, PriceStyled,
-  ValueStyled, Button
+  ValueStyled, ButtonStyled, TotalStyled, iconStyle
 };

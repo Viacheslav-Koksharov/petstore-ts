@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const MainStyled = styled.main`
   display: flex;
@@ -6,6 +7,15 @@ const MainStyled = styled.main`
   padding:20px;
   background-color: white;
 `;
+
+const LinkStyled = styled(Link)`
+  display: flex;
+  margin-top: 10px;
+  padding: 10px 0 10px 10px;
+  justify-content: flex-end;
+  color: #708db3;
+  font-size: 12px;
+  text-decoration: underline;`;
 
 const Form = styled.form`
   width: 100%;
@@ -81,4 +91,4 @@ const button = {
   margin: "0 120px"
 }
 
-export { MainStyled, Form, Label, ItemContainer, LabelText, Input, ErrorText, iconStyle, InputContainer, button };
+export { MainStyled, Form, Label, LinkStyled, ItemContainer, LabelText, Input, ErrorText, iconStyle, InputContainer, button };

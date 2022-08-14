@@ -1,4 +1,6 @@
 import { useEffect, useContext } from "react";
+import { IconContext } from 'react-icons';
+import { RiDeleteBin6Line } from 'react-icons/ri';
 import {
   ListStyled,
   ItemStyled,
@@ -6,7 +8,8 @@ import {
   TextStyled,
   PriceStyled,
   ValueStyled,
-  Button,
+  ButtonStyled,
+  TotalStyled, iconStyle
 } from "./Cart.styled";
 import { ICart } from "../../interfaces/Cart.interface";
 import { IProduct } from "../../interfaces/Product.interface";
@@ -20,24 +23,35 @@ const Cart = ({ main }: ICart) => {
     localStorage.setItem("basket", JSON.stringify(basketItems));
   }, [basketItems]);
 
-  const basketItemsQuantity = (id: string) => {
+  const getQuantity = (id: string) => {
     const item = basketItems.find((item) => item.id === id);
     return item?.quantity;
   };
 
-  const deleteCartItem = (id: string) => {
-    const updatetBasketItems = basketItems.filter((item) => item.id !== id);
-    setBasketItems(updatetBasketItems);
+  const deleteItem = (id: string) => {
+    const updatedBasketItems = basketItems.filter((item) => item.id !== id);
+    setBasketItems(updatedBasketItems);
   };
 
-  const getTotal = (price: string, quantity: number | undefined) => {
+  const getCost = (price: string, quantity: number | undefined) => {
     if (quantity) {
       return (Number(price.slice(1)) * quantity).toFixed(2);
     }
   };
 
+  const getTotal = () => {
+    const total = basketItems.reduce((total, item) => {
+      if(item && item?.quantity) {
+        return total + item.quantity * Number(item.price.slice(1));
+      }
+      return total;
+    }, 0);
+    return total;
+  }
+
   return (
-    <ListStyled main={main}>
+    <>
+      <ListStyled main={main}>
       {basketItems &&
         basketItems.map(({ id, image, name, price, quantity }: IProduct) => (
           <ItemStyled key={id} id={id}>
@@ -45,15 +59,19 @@ const Cart = ({ main }: ICart) => {
               <img src={image} alt={name} />
             </ImageContainerStyled>
             <TextStyled main={main}>{name}</TextStyled>
-            <Counter id={id} value={basketItemsQuantity(id)} />
+            <Counter id={id} value={getQuantity(id)} />
             <PriceStyled main={main}>{price}</PriceStyled>
-            <ValueStyled main={main}>${getTotal(price, quantity)}</ValueStyled>
-            <Button id={id} onClick={() => deleteCartItem(id)}>
-              Del
-            </Button>
+            <ValueStyled main={main}>${getCost(price, quantity)}</ValueStyled>
+            <ButtonStyled id={id} onClick={() => deleteItem(id)}>
+              <IconContext.Provider value={{ style: iconStyle }}>
+                  <RiDeleteBin6Line />
+              </IconContext.Provider>
+            </ButtonStyled>
           </ItemStyled>
         ))}
-    </ListStyled>
+      </ListStyled>
+      {basketItems && <TotalStyled>your purchase amount, ${getTotal().toFixed(2)}</TotalStyled>}
+  </>
   );
 };
 

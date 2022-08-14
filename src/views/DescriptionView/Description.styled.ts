@@ -4,6 +4,7 @@ const TextStyled = styled.div`
     height:150px;
     margin: 0 auto;
     text-align: left;
+    line-height: 1.4;
 `;
 
 export { TextStyled };
