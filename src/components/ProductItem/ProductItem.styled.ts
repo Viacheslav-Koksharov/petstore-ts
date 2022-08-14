@@ -46,6 +46,13 @@ const TitleStyled = styled.p`
   font-weight: bold;
 `;
 
+const AlertStyle = styled.p`
+  margin: 5px 0 30px 0;
+  color:red;
+  font-size: 15px;
+  font-weight: 500;
+`;
+
 const BrandStyle = styled.p`
   margin: 0 0 30px 0;
   font-size: 26px;
@@ -53,7 +60,7 @@ const BrandStyle = styled.p`
 `;
 
 const List = styled.ul`
-  display:flex;  
+  display:flex;
   margin: 0 0 20px 0;
   align-items: center;
   justify-content: space-evenly;
@@ -79,7 +86,7 @@ const LinkItem = styled(Link)`
 `;
 
 const button = {
-  'margin': '0 0 30px 0',
+  'margin': '0 0 0 0',
   'width': '120px',
   'height': '40px',
   'padding': '10px',
@@ -87,4 +94,4 @@ const button = {
   'backgroundColor': '#bbb1df',
 }
 
-export { MainStyled, GoBackButton, ProductContainer, ImageContainerStyled, button, TextContainerStyled, TitleStyled, BrandStyle, List, LinkItem };
+export { MainStyled, GoBackButton, ProductContainer, ImageContainerStyled, AlertStyle, button, TextContainerStyled, TitleStyled, BrandStyle, List, LinkItem };

@@ -12,12 +12,14 @@ import {
   BrandStyle,
   List,
   LinkItem,
+  AlertStyle,
 } from "./ProductItem.styled";
 import products from "../../mocks/data/products.json";
 import { IProduct } from "../../interfaces/Product.interface";
 import { BasketContext } from "../../context/BasketContextProvider";
 import authSelectors from "../../redux/auth/auth-selectors";
 import Button from "../Button/Button";
+import CustomModal from "../CustomModal";
 
 const getInitialBasketState = () => {
   const cart = localStorage.getItem("basket");
@@ -62,8 +64,6 @@ const ProductItem = () => {
       } else {
         alert("Product is on the Basket");
       }
-    } else {
-      navigate("/login");
     }
   }
 
@@ -83,6 +83,9 @@ const ProductItem = () => {
             <TitleStyled>{product?.name}</TitleStyled>
             <TitleStyled>{product?.price}</TitleStyled>
             <BrandStyle>Manufacturer: {product?.manufacturer}</BrandStyle>
+            <CustomModal>
+              <p>Go ahead</p>
+            </CustomModal>
             <Button
               style={button}
               aria-label="add to cart"
@@ -90,6 +93,13 @@ const ProductItem = () => {
             >
               add to cart
             </Button>
+            {!isLoggedIn && (
+              <AlertStyle>
+                You can't add this product to the cart.
+                <br />
+                Please login or register
+              </AlertStyle>
+            )}
             <List>
               <LinkItem to={"description"}>Description</LinkItem>
               <LinkItem to={"ingredients"}>Ingredients</LinkItem>
