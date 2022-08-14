@@ -16,7 +16,6 @@ import {
   iconStyle,
   InputContainer,
   button,
-  LinkStyled,
 } from "./LoginView.styled";
 import Button from "../../components/Button";
 
@@ -103,7 +102,6 @@ export default function LoginView() {
         <Button style={button} type="submit">
           Login
         </Button>
-        <LinkStyled to={`/register`}>Don't have an account?</LinkStyled>
       </Form>
     </MainStyled>
   );

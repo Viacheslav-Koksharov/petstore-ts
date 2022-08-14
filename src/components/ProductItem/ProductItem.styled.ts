@@ -53,7 +53,7 @@ const BrandStyle = styled.p`
 `;
 
 const List = styled.ul`
-  display:flex;
+  display:flex;  
   margin: 0 0 20px 0;
   align-items: center;
   justify-content: space-evenly;

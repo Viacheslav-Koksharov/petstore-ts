@@ -30,11 +30,11 @@ const CustomModal = ({ children }: IModalContextProps) => {
       {children}
       <ContainerButton>
         <Button style={button} onClick={closeModal}>
-          Continue
+          Back to shopping
         </Button>
         <LinkStyled to={"/cart"}>
           <Button style={button} onClick={closeModal}>
-            Place order
+            Go to my cart
           </Button>
         </LinkStyled>
       </ContainerButton>

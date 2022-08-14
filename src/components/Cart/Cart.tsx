@@ -14,6 +14,7 @@ import {
 import { ICart } from "../../interfaces/Cart.interface";
 import { IProduct } from "../../interfaces/Product.interface";
 import { BasketContext } from "../../context/BasketContextProvider";
+import {getTotal} from '../../helpers/getTotal';
 import Counter from "../Counter";
 
 const Cart = ({ main }: ICart) => {
@@ -39,16 +40,6 @@ const Cart = ({ main }: ICart) => {
     }
   };
 
-  const getTotal = () => {
-    const total = basketItems.reduce((total, item) => {
-      if(item && item?.quantity) {
-        return total + item.quantity * Number(item.price.slice(1));
-      }
-      return total;
-    }, 0);
-    return total;
-  }
-
   return (
     <>
       <ListStyled main={main}>
@@ -70,7 +61,7 @@ const Cart = ({ main }: ICart) => {
           </ItemStyled>
         ))}
       </ListStyled>
-      {basketItems && <TotalStyled>your purchase amount, ${getTotal().toFixed(2)}</TotalStyled>}
+      {basketItems && <TotalStyled>your purchase amount, ${getTotal(basketItems).toFixed(2)}</TotalStyled>}
   </>
   );
 };

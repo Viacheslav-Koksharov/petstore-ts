@@ -1,15 +1,13 @@
 import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { RootState } from "../store";
+import { IToken } from '../interfaces/Token.interface';
+import { IOrder } from '../interfaces/Order.interface';
 
 axios.defaults.baseURL = "https://connections-api.herokuapp.com";
 
-interface Itoken {
-  token: string;
-}
-
 const token = {
-  set(token: Itoken) {
+  set(token: IToken) {
     axios.defaults.headers.common.Authorization = `Bearer ${token}`;
   },
   unset() {
@@ -69,3 +67,15 @@ export const fetchCurrentUser = createAsyncThunk(
     }
   }
 );
+
+export const placeOrder = createAsyncThunk("auth/placeOrder", async (order: IOrder, thunkAPI) => {
+  try {
+    setTimeout(() => {
+      window.localStorage.setItem("basket", '[]')
+      window.localStorage.setItem("order", JSON.stringify(order))
+    }, 3000);
+    return order;
+  } catch (error) {
+    return thunkAPI.rejectWithValue('error');
+  }
+})

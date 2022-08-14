@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const MainStyled = styled.main`
   display: flex;
@@ -24,4 +25,12 @@ const button = {
   backgroundColor: '#bbb1df',
   margin: "0 auto"
 }
-export { MainStyled, button, CartTitle };
+
+const LinkStyled = styled(Link)`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+`;
+export { MainStyled, button, CartTitle,LinkStyled };
