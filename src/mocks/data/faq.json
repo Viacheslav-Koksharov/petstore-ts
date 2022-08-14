@@ -1,31 +1,25 @@
 [
         {
-            "id": "1",
             "question": "Can dogs eat cooked pork meat?",
             "answer": "Yes, pork is a great protein high in micronutrients and recommended for fussy-eaters."
         },
         {
-            "id": "2",
             "question": "How to feed cooked pork to your dog?",
             "answer": "It can be mixed in with their meal or given as a treat on its own."
         },
         {
-            "id": "3",
             "question": "How much cooked pork meat can a dog eat?",
             "answer": "That depends on the size of the dog. Only pork meat is not a balanced meal and should be combined with organs, vegetables, seeds and if necessary, certain supplements to reach nutrient requirements. PetCubes includes pork meat and organs with beneficial plants to provide optimized nutrient concentrations."
         },
         {
-            "id": "4",
             "question": "Why is good nutrition important for cats?",
             "answer": "It’s vital that your cat eats a complete and balanced diet consisting of good quality meat products. Unlike dogs (and people), cats are strict carnivores. They require essential nutrients such as taurine, arginine, vitamin A and essential fatty acids that plant food lack. She also needs plenty of fresh water as well. Your cat should be fed amounts sufficient to meet energy and caloric requirements. Inadequate or excess intake of nutrients can be equally harmful."
         },
         {
-            "id": "5",
             "question": "When should I change from kitten to adult food?",
             "answer": "In her first year, your kitten will grow and change very quickly, so she needs a special diet for kittenhood and adult. Feed high quality kitten food until she is about 7-9 months old. At this point, you can change to an adult diet. When she is around 8 or 9 years old, switch to a senior diet."
         },
         {
-            "id": "6",
             "question": "How do I change my pet’s diet?",
             "answer": "Don’t change your pet’s diet all at once, otherwise she may refuse the new food. Do it gradually over three days. Begin changing his diet by feeding 1/4 new food and 3/4 his old food for a few days. Then add 1/2 new food and 1/2 old food. After a few more days, feed 3/4 new food and 1/4 old food. Then, you can feed the new food entirely."
         }
