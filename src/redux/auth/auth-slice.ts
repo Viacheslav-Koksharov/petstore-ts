@@ -55,7 +55,7 @@ const authSlice = createSlice({
         state.isFetchingCurrentUser = false;
       })
       .addCase(placeOrder.pending, (state: IState) => void (state.loading = true))
-      .addCase(placeOrder.fulfilled, (state: IState, {payload}) => {
+      .addCase(placeOrder.fulfilled, (state: IState, { payload }) => {
         state.orders.push(payload)
       })
       .addCase(placeOrder.rejected, (state: IState) => { state.loading = false })

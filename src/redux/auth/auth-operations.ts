@@ -72,8 +72,8 @@ export const placeOrder = createAsyncThunk("auth/placeOrder", async (order: IOrd
   try {
     setTimeout(() => {
       window.localStorage.setItem("basket", '[]')
-      window.localStorage.setItem("order", JSON.stringify(order))
-    }, 3000);
+    }, 500);
+    window.localStorage.setItem("orders", JSON.stringify(order));
     return order;
   } catch (error) {
     return thunkAPI.rejectWithValue('error');

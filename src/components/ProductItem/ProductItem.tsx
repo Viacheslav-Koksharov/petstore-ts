@@ -53,7 +53,9 @@ const ProductItem = () => {
 
   function handleSubmit() {
     if (isLoggedIn) {
+      //@ts-ignore
       const itemIndex = items.findIndex(({ id }) => id === offersId);
+
       const item: IProduct | undefined = product;
       if (itemIndex < 0) {
         if (item) {

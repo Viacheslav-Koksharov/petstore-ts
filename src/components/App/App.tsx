@@ -138,7 +138,7 @@ export default function App() {
               <Route
                 path="/account"
                 element={
-                  <PrivateRoute redirectTo="/login">
+                  <PrivateRoute redirectTo="/">
                     <AccountView />
                   </PrivateRoute>
                 }

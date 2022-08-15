@@ -6,7 +6,8 @@ interface IOrder {
 }
 
 interface IOrders {
+    map(arg0: ({ order }: any) => JSX.Element): import("react").ReactNode;
     order: IOrder[]
 }
 
-export type { IOrder,IOrders };
+export type { IOrder, IOrders };
