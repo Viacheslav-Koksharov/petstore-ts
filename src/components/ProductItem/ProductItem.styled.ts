@@ -47,7 +47,7 @@ const TitleStyled = styled.p`
 `;
 
 const AlertStyle = styled.p`
-  margin: 5px 0 30px 0;
+  margin: 0 0 30px 0;
   color:red;
   font-size: 15px;
   font-weight: 500;
@@ -86,7 +86,7 @@ const LinkItem = styled(Link)`
 `;
 
 const button = {
-  'margin': '0 0 0 0',
+  'margin': '0 0 20px 0',
   'width': '120px',
   'height': '40px',
   'padding': '10px',

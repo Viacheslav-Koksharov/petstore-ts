@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+const MainStyled = styled.main`
+  width: 100%;
+  height: 100vh;
+  padding:20px;
+  background-color: white;
+`;
+
 const TitleStyled = styled.h2`
   text-align: center;
   margin: 0 0 30px 0;
@@ -8,15 +15,9 @@ const TitleStyled = styled.h2`
   font-weight: 500;
   text-transform: uppercase;
 `;
-const MainStyled = styled.main`
-  width: 100%;
-  padding:20px;
-  background-color: white;
-`;
 
 const ListStyled = styled.ul`
   width: 70%;
-  height: 100%;
   margin: 0 auto 20px;
   padding: 5px;
 `;
@@ -42,6 +43,7 @@ const ImageContainerStyled = styled.div`
     height: 100px;
 
 `;
+
 const TotalStyled = styled.p`
   margin-bottom: 30px;
   text-align: center;

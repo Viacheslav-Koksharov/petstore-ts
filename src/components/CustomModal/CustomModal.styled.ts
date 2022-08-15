@@ -9,6 +9,7 @@ const button = {
   backgroundColor: '#bbb1df',
 
 }
+
 const ModalTitle = styled.h2`
   margin: 0 0 15px 0;
   color: #708db3;

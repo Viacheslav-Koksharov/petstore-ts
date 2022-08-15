@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import {
   TitleStyled,
   MainStyled,
@@ -16,25 +16,36 @@ const getInitialBasketState = () => {
 
 const AccountView = () => {
   const [userOrders] = useState<IOrder>(getInitialBasketState);
+  const topRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    if (topRef.current) {
+      window.scrollTo({ top: -50, behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <>
-      <MainStyled>
-        <TitleStyled>You've just placed your first order!</TitleStyled>
-        {userOrders.items && (
-          <ListStyled>
-            {userOrders.items.map((item) => (
-              <ItemStyled key={item.id}>
-                <ImageContainerStyled>
-                  <img src={item.image} alt={item.name} />
-                </ImageContainerStyled>
-                <p>{item.name}</p>
-                <p>{item.price}</p>
-              </ItemStyled>
-            ))}
-          </ListStyled>
+      <MainStyled ref={topRef}>
+        {userOrders.items ? (
+          <>
+            <TitleStyled>You've just placed your first order!</TitleStyled>
+            <ListStyled>
+              {userOrders.items.map((item) => (
+                <ItemStyled key={item.id}>
+                  <ImageContainerStyled>
+                    <img src={item.image} alt={item.name} />
+                  </ImageContainerStyled>
+                  <p>{item.name}</p>
+                  <p>{item.price}</p>
+                </ItemStyled>
+              ))}
+            </ListStyled>
+            <TotalStyled>your purchase amount, ${userOrders.total}</TotalStyled>
+          </>
+        ) : (
+          <TitleStyled>You have no any order placed yet...</TitleStyled>
         )}
-        <TotalStyled>your purchase amount, ${userOrders.total}</TotalStyled>
       </MainStyled>
     </>
   );

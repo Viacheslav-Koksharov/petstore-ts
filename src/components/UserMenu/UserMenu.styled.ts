@@ -7,12 +7,14 @@ const NavigationStyled = styled.nav`
   align-items: center;
   justify-content: space-between;
 `;
+
 const LinkStyled = styled(Link)`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 `;
+
 const Text = styled.p`
   margin: 0;
   width: 150px;
@@ -105,20 +107,5 @@ const ItemsCounter = styled.small`
   font-weight: 400;
 `;
 
-const ModalTitle = styled.h2`
-  margin: 0;
-  color: #708db3;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-`;
 
-const ContainerButton = styled.div`
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-
-export { NavigationStyled, LinkStyled, ButtonAccount, accStyle, ButtonCart, iconStyle, Text, button, ModalTitle, ContainerCounter, ContainerButton, ItemsCounter };
+export { NavigationStyled, LinkStyled, ButtonAccount, accStyle, ButtonCart, iconStyle, Text, button, ContainerCounter, ItemsCounter };
