@@ -6,7 +6,7 @@ interface Props {
 }
 
 const MainStyled = styled.main`
-  height: 768px;
+  height: 100%;
   text-align: center;
 `;
 

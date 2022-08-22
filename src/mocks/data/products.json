@@ -1,11 +1,11 @@
 [
     {
         "id": "1",
-        "name": "Chewables for Dogs 24.1 to 60 lbs., 6 Month Supply",
+        "name": "Bavaro Junior Adult for Dogs",
         "price": "$125.99",
-        "image": "https://assets.petco.com/petco/image/upload/f_auto,q_auto,w_190/dpr_auto/2975522-center-1",
-        "manufacturer": "NexGard",
-        "category": "cats",
+        "image": "/static/media/BavaroJuniorAdult.c36eca661b6aeec83a3d.jpg",
+        "manufacturer": "Bavaro",
+        "category": "dogs",
         "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
         "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
         "nutrients": {
@@ -21,11 +21,11 @@
     },
     {
         "id": "2",
-        "name": "Royal Canin Sensitive Lamb",
+        "name": "Brit Premium Adult Size L",
         "price": "$55.00",
-        "image": "https://www.zooapteka.kiev.ua/image/cache/data/product/dogs/Royal-Canin/suhoi_korm/adult-maxi_packshot-500x500.jpg",
-        "manufacturer": "Royal Canin",
-        "category": "cats",
+        "image": "/static/media/BritPremiumAdultL.109705126bbdb8de7ce1.jpg",
+        "manufacturer": "Brit Premium",
+        "category": "dogs",
         "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
         "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
         "nutrients": {
@@ -41,11 +41,11 @@
     },
     {
         "id": "3",
-        "name": "Royal Canin Maxi Puppy",
+        "name": "Acana First Easy for Kitten",
         "price": "$76.49",
-        "image": "https://www.zooapteka.kiev.ua/image/cache/data/product/dogs/Royal-Canin/suhoi_korm/maxi-puppy_packshot-500x500.jpg",
-        "manufacturer": "Royal Canin",
-        "category": "dogs",
+        "image": "/static/media/CatAcanaKitten.77bef785551e9cb85c1c.jpg",
+        "manufacturer": "Acana",
+        "category": "cats",
         "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
         "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
         "nutrients": {
@@ -61,11 +61,11 @@
     },
     {
         "id": "4",
-        "name": "Royal Canin Mini Starter",
+        "name": "Brit for Cat Sterilized",
         "price": "$57.50",
-        "image": "https://www.zooapteka.kiev.ua/image/cache/data/product/dogs/Royal-Canin/suhoi_korm/mini-starter_packshot-500x500.jpg",
-        "manufacturer": "Royal Canin",
-        "category": "dogs",
+        "image": "/static/media/CatBritSterilized.c403b4b1dbaf2750f8e8.jpg",
+        "manufacturer": "Brit",
+        "category": "cats",
         "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
         "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
         "nutrients": {
@@ -81,11 +81,11 @@
     },
     {
         "id": "5",
-        "name": "Royal Canin Adult Mini",
+        "name": "Brit for Cat Hair Care",
         "price": "$80.59",
-        "image": "https://www.zooapteka.kiev.ua/image/cache/data/product/dogs/Royal-Canin/suhoi_korm/adult-mini_packshot-500x500.jpg",
-        "manufacturer": "Royal Canin",
-        "category": "dogs",
+        "image": "/static/media/CatBrittHairCare.bde0b47071e7e942e6d6.jpg",
+        "manufacturer": "Brit",
+        "category": "cats",
         "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
         "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
         "nutrients": {
@@ -101,9 +101,169 @@
     },
     {
         "id": "6",
-        "name": "Josera SensiPlus",
-        "price": "$151.99",
-        "image": "https://www.zooapteka.kiev.ua/image/cache/data/product/josera-sensi-plus-korm-dly-sobak-500x500.jpg",
+        "name": "Friskies 5 Promises",
+        "price": "$75.99",
+        "image": "/static/media/CatFriskies.9247825f540ae9209bd7.jpg",
+        "manufacturer": "Friskies",
+        "category": "cats",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "7",
+        "name": "Hills Science Plan",
+        "price": "$57.50",
+        "image": "/static/media/CatHillsSciencePlan.023d337f7b0239d98ca3.jpg",
+        "manufacturer": "Hills",
+        "category": "cats",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "15.9",
+            "fat": "6.5",
+            "carbohydrates": "4.8",
+            "fibre": "1.4",
+            "moisture": "78.0",
+            "calcium": "0.9",
+            "phosphorous": "0.9"
+        },
+        "energy": "78.4kcal/cube"
+    },
+    {
+        "id": "8",
+        "name": "Monge for Cat Sterilized",
+        "price": "$80.99",
+        "image": "/static/media/CatMongeSterilized.1172d5d04524accb3c9b.jpg",
+        "manufacturer": "Monge",
+        "category": "cats",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "12.9",
+            "fat": "6.7",
+            "carbohydrates": "3.8",
+            "fibre": "1.8",
+            "moisture": "75.0",
+            "calcium": "1.2",
+            "phosphorous": "1.3"
+        },
+        "energy": "86.5kcal/cube"
+    },
+    {
+        "id": "9",
+        "name": "OptiMeal for Adult Cats",
+        "price": "$120.99",
+        "image": "/static/media/CatOptiMealAdult.df8c4c121628ce6808ba.jpg",
+        "manufacturer": "OptiMeal",
+        "category": "cats",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "10",
+        "name": "Royal Canin for Kitten",
+        "price": "$99.99",
+        "image": "/static/media/CatRoyalCaninKitten.452b6ab98359339db27c.jpg",
+        "manufacturer": "Royal Canin",
+        "category": "cats",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "11",
+        "name": "Savory Fresh",
+        "price": "$140.00",
+        "image": "/static/media/CatSavory.0d5a7d229a3883c487e3.jpg",
+        "manufacturer": "Savory",
+        "category": "cats",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "12",
+        "name": "Hills for Adult Dogs with Chiken",
+        "price": "$125.00",
+        "image": "/static/media/HillsAdultChiken.11edbca9b893d74309fa.jpg",
+        "manufacturer": "Hills",
+        "category": "dogs",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "13",
+        "name": "Royal Canin Main Coon Kitten",
+        "price": "$80.50",
+        "image": "/static/media/CatRoyalCaninMainKitten.dd24b195081ddc6375a1.jpg",
+        "manufacturer": "Royal Canin",
+        "category": "cats",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "14",
+        "name": "Josera Lamm & Rice",
+        "price": "$150.00",
+        "image": "/static/media/JoseraLammRice.3dbff0d42c41725dd230.jpg",
         "manufacturer": "Josera",
         "category": "dogs",
         "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
@@ -120,51 +280,111 @@
         "energy": "76.5kcal/cube"
     },
     {
-        "id": "7",
-        "name": "Royal Canin Mini Starter",
-        "price": "$57.50",
-        "image": "https://www.zooapteka.kiev.ua/image/cache/data/product/dogs/Royal-Canin/suhoi_korm/mini-starter_packshot-500x500.jpg",
-        "manufacturer": "Royal Canin",
-        "category": "dogs",
-        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
-        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
-        "nutrients": {
-            "protein": "15.9",
-            "fat": "6.5",
-            "carbohydrates": "4.8",
-            "fibre": "1.4",
-            "moisture": "78.0",
-            "calcium": "0.9",
-            "phosphorous": "0.9"
-        },
-        "energy": "78.4kcal/cube"
-    },
-    {
-        "id": "8",
-        "name": "Royal Canin Adult Mini",
-        "price": "$80.59",
-        "image": "https://www.zooapteka.kiev.ua/image/cache/data/product/dogs/Royal-Canin/suhoi_korm/adult-mini_packshot-500x500.jpg",
-        "manufacturer": "Royal Canin",
-        "category": "dogs",
-        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
-        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
-        "nutrients": {
-            "protein": "12.9",
-            "fat": "6.7",
-            "carbohydrates": "3.8",
-            "fibre": "1.8",
-            "moisture": "75.0",
-            "calcium": "1.2",
-            "phosphorous": "1.3"
-        },
-        "energy": "86.5kcal/cube"
-    },
-    {
-        "id": "9",
-        "name": "Josera SensiPlus",
-        "price": "$151.99",
-        "image": "https://www.zooapteka.kiev.ua/image/cache/data/product/josera-sensi-plus-korm-dly-sobak-500x500.jpg",
+        "id": "15",
+        "name": "Josera Sensi Plus",
+        "price": "$190.59",
+        "image": "/static/media/JoseraSensiPlus.a0be442af00b158dcc7d.jpg",
         "manufacturer": "Josera",
+        "category": "dogs",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "16",
+        "name": "Nutrican Adult Dogs",
+        "price": "$147.49",
+        "image": "/static/media/NutricanAdult.4f4daab973890c3a40a7.jpg",
+        "manufacturer": "Nutrican",
+        "category": "dogs",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "17",
+        "name": "OptiMeal Adult Breed",
+        "price": "$160.60",
+        "image": "/static/media/OptiMealAdultBreed.1c3c6ebd837056901c76.jpg",
+        "manufacturer": "OptiMeal",
+        "category": "dogs",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "18",
+        "name": "Purina Dog Show",
+        "price": "$140.40",
+        "image": "/static/media/PurinaDogShow.5ed337b40b3a768fc701.jpg",
+        "manufacturer": "Purina",
+        "category": "dogs",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "19",
+        "name": "Royal Canin Adult",
+        "price": "$155.00",
+        "image": "/static/media/RoyalCaninAdult.6ddf04b12524568a8d27.jpg",
+        "manufacturer": "Royal Canin",
+        "category": "dogs",
+        "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
+        "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",
+        "nutrients": {
+            "protein": "14.9",
+            "fat": "2.7",
+            "carbohydrates": "4.8",
+            "fibre": "2.0",
+            "moisture": "74.0",
+            "calcium": "1.5",
+            "phosphorous": "0.6"
+        },
+        "energy": "76.5kcal/cube"
+    },
+    {
+        "id": "20",
+        "name": "Royal Canin Medium Adult",
+        "price": "$125.00",
+        "image": "/static/media/RoyalCaninMedium.19de9cc6347d22db7038.jpg",
+        "manufacturer": "Royal Canin",
         "category": "dogs",
         "description": "Pork has more essential amino acids present, which is critical for building muscle mass and repair. Lean pork is the highest digestible of the protein sources, and low in nitrates. To build the best muscle mass, pork protein is an ideal choice, and the repair of damaged tissue is accomplished better. With the addition of supplements, it keeps joints and guts protected through ageing.",
         "ingredients": "Lean Pork Shoulder, Pumpkin, Pork Liver, Pork Kidney, Sprouted Lentils, Ground Germinated Sunflower Seeds, Green Peas, Ground Pumpkin Seeds, Atlantic Salmon Oil, Ground Eggshells, Blueberries, Organic Sea Kelp, Prebiotics & Probiotics Collagen Mix, Spirulina, Acai Berries, Ashwagandha Root, Pomegranate Seeds, Milk Thistle, Turmeric, Bacopa Extract, Black Pepper, Vitamin D, Vitamin E. ",

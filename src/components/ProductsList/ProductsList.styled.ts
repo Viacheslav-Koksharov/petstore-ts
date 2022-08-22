@@ -53,6 +53,7 @@ const TextStyled = styled.p`
 `;
 
 const button = {
+    'margin': '0 auto',
     'width': '120px',
     'height': '40px',
     'padding': '10px',
