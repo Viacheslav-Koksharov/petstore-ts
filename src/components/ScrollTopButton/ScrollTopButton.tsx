@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
+import { BsArrowUpSquareFill } from "react-icons/bs";
 import { Button } from "./ScrollTopButton.styled";
 
 const ScrollButton = () => {
@@ -18,8 +18,6 @@ const ScrollButton = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-      /* you can also use 'auto' behaviour
-         in place of 'smooth' */
     });
   };
 
@@ -27,7 +25,7 @@ const ScrollButton = () => {
 
   return (
     <Button>
-      <FaArrowCircleUp
+      <BsArrowUpSquareFill
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none" }}
       />

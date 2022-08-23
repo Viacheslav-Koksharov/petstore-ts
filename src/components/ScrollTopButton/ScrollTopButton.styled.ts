@@ -4,7 +4,7 @@ const Button = styled.div`
    position: fixed;
    width: 100%;
    left: 96%;
-   bottom: 90px;
+   bottom: 110px;
    height: 20px;
    font-size: 3rem;
    z-index: 1;

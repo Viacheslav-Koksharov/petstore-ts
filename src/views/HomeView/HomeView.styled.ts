@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { breakpoints } from '../../helpers/variables';
+const { main } = breakpoints;
 
 interface Props {
   accent?: boolean;
@@ -6,8 +8,11 @@ interface Props {
 }
 
 const MainStyled = styled.main`
+
+@media screen and (min-width: ${main.desktop}px){
   height: 100%;
   text-align: center;
+}
 `;
 
 const SectionStyled = styled.section`

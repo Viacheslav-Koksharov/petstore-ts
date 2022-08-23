@@ -33,7 +33,7 @@ const UserMenu = () => {
     <NavigationStyled>
       <Text>
         welcome,
-        <br /> {name || "quest"}!
+        <br /> {name.split(" ")[0] || "quest"}!
       </Text>
       <LinkStyled to={`/account`}>
         <ButtonAccount>
