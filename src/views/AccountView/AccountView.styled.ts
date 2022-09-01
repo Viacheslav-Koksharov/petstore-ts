@@ -1,10 +1,17 @@
 import styled from "styled-components";
+import { breakpoints } from "../../helpers/variables";
+
+const { main } = breakpoints;
 
 const MainStyled = styled.main`
   width: 100%;
+  padding:5px;
+  background-color: white;
+
+@media screen and (min-width: ${main.tablet}px){
   height: 100vh;
   padding:20px;
-  background-color: white;
+}
 `;
 
 const TitleStyled = styled.h2`
@@ -17,9 +24,13 @@ const TitleStyled = styled.h2`
 `;
 
 const ListStyled = styled.ul`
+width: 100%;
+  margin: 0 auto 10px;
+  padding: 5px;
+@media screen and (min-width: ${main.tablet}px){
   width: 70%;
   margin: 0 auto 20px;
-  padding: 5px;
+  padding: 5px;}
 `;
 
 const ItemStyled = styled.li`

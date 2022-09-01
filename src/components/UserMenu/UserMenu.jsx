@@ -1,17 +1,14 @@
 import { useContext } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { IconContext } from "react-icons";
 import { FaShoppingCart } from "react-icons/fa";
 import { VscAccount } from "react-icons/vsc";
 import {
   NavigationStyled,
   LinkStyled,
   ButtonAccount,
-  accStyle,
   ButtonCart,
-  iconStyle,
   Text,
-  button,
+  LogOutButton,
   ContainerCounter,
   ItemsCounter,
 } from "./UserMenu.styled";
@@ -19,9 +16,9 @@ import authSelectors from "../../redux/auth/auth-selectors";
 import { logOut } from "../../redux/auth/auth-operations";
 import { ModalContext } from "../../context/ModalContextProvider";
 import { BasketContext } from "../../context/BasketContextProvider";
-import Button from "../Button";
 import CustomModal from "../CustomModal";
 import Cart from "../Cart";
+import "../../index.css";
 
 const UserMenu = () => {
   const dispatch = useDispatch();
@@ -37,25 +34,21 @@ const UserMenu = () => {
       </Text>
       <LinkStyled to={`/account`}>
         <ButtonAccount>
-          <IconContext.Provider value={{ style: { ...accStyle } }}>
-            <VscAccount />
-          </IconContext.Provider>
+          <VscAccount className="IconAccount" />
         </ButtonAccount>
       </LinkStyled>
       <CustomModal>
         <Cart />
       </CustomModal>
       <ButtonCart onClick={openModal}>
-        <IconContext.Provider value={{ style: { ...iconStyle } }}>
-          <FaShoppingCart />
-        </IconContext.Provider>
+        <FaShoppingCart className="IconCart" />
         <ContainerCounter>
           <ItemsCounter>{basketItems.length}</ItemsCounter>
         </ContainerCounter>
       </ButtonCart>
-      <Button type="button" style={button} onClick={() => dispatch(logOut())}>
+      <LogOutButton type="button" onClick={() => dispatch(logOut())}>
         Log out
-      </Button>
+      </LogOutButton>
     </NavigationStyled>
   );
 };

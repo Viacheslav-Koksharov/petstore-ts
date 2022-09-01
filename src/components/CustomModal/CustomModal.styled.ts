@@ -2,12 +2,9 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 const button = {
-  width: '150px',
-  height: '40px',
   padding: '10px',
   color: 'white',
   backgroundColor: '#bbb1df',
-
 }
 
 const ModalTitle = styled.h2`
@@ -43,8 +40,9 @@ const customStyles = {
     left: "50%",
     right: "auto",
     bottom: "auto",
-    width: "900px",
-    height: "450px",
+    width: "90%",
+    height: "70%",
+    padding: "5px",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
   },

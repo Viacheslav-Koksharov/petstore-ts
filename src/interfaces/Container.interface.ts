@@ -4,6 +4,7 @@ interface IContainer {
     background?: boolean;
     carousel?: boolean;
     flex?: boolean;
+    mob?: boolean;
 }
 
 export type { IContainer };

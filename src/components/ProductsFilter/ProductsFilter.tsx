@@ -2,8 +2,10 @@ import { useEffect, useState, useContext } from "react";
 import {
   ContainerStyled,
   TitleStyled,
-  ListStyled,
-  ItemStyled,
+  ListFilterStyled,
+  ListImageStyled,
+  ItemFilterStyled,
+  ItemImageStyled,
   button,
 } from "./ProductsFilter.styled";
 import { IProduct } from "../../interfaces/Product.interface";
@@ -47,35 +49,35 @@ const ProductsFilter = () => {
     <>
       <ContainerStyled>
         <TitleStyled>Category</TitleStyled>
-        <ListStyled>
+        <ListFilterStyled>
           {
             <>
               {categories.map((category) => (
-                <ItemStyled key={category}>
+                <ItemFilterStyled key={category}>
                   <Button id={category} style={button} onClick={onButtonClick}>
                     {category}
                   </Button>
-                </ItemStyled>
+                </ItemFilterStyled>
               ))}
-              <ItemStyled>
+              <ItemFilterStyled>
                 <Button id="all" style={button} onClick={onButtonClick}>
                   all products
                 </Button>
-              </ItemStyled>
+              </ItemFilterStyled>
             </>
           }
-        </ListStyled>
+        </ListFilterStyled>
         <Container>
           <img src={ImageCategory} alt="dog" />
         </Container>
       </ContainerStyled>
-      <ListStyled>
+      <ListImageStyled>
         {images.map((image) => (
-          <ItemStyled key={image}>
+          <ItemImageStyled key={image}>
             <img src={image} alt="animal food" />
-          </ItemStyled>
+          </ItemImageStyled>
         ))}
-      </ListStyled>
+      </ListImageStyled>
     </>
   );
 };

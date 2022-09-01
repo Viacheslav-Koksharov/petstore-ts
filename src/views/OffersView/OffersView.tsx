@@ -15,7 +15,7 @@ const OffersView = () => {
 
   return (
     <ProductsProvider>
-      <MainStyled ref={topRef}>
+      <MainStyled>
         <Sidebar offers />
         <ProductsList cost />
       </MainStyled>

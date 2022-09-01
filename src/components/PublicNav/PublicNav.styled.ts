@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { breakpoints } from "../../helpers/variables";
+
+const { main } = breakpoints;
 
 const ListStyled = styled.ul`
     display: flex;
@@ -10,9 +13,10 @@ const ItemStyled = styled.li``;
 
 const LinkStyled = styled(NavLink)`
     display: inline-block;
-    padding: 10px;
+    padding: 6px;
+    margin:3px;
     color: #708db3;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: capitalize;
     text-decoration: none;
@@ -24,6 +28,11 @@ const LinkStyled = styled(NavLink)`
     :hover {
         transform: scale(1.1);
     }
+
+    @media screen and (min-width: ${main.tablet}px) {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;}
 `;
 
 export { ListStyled, ItemStyled, LinkStyled }

@@ -1,15 +1,15 @@
-import { ContainerStyled, TextStyled } from './Banner.styled';
+import { ContainerStyled, TextStyled } from "./Banner.styled";
 
 interface Props {
-    text: string;
+  text: string;
 }
 
-const Banner = ({text}: Props) => {
-    return (
-        <ContainerStyled>
-            <TextStyled>{text}</TextStyled>
-        </ContainerStyled>
-    )
-}
+const Banner = ({ text }: Props) => {
+  return (
+    <ContainerStyled>
+      <TextStyled>{text}</TextStyled>
+    </ContainerStyled>
+  );
+};
 
 export default Banner;

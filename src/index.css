@@ -43,3 +43,54 @@ button {
   outline: none;
   cursor: pointer;
 }
+
+.IconStyle {
+  width: 20px;
+  height: 20px;
+  color: #708db3;
+}
+
+@media screen and (min-width: 768px) {
+  .IconStyle {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.IconAccount {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  color: #708db3;
+}
+@media screen and (min-width: 768px) {
+  .IconAccount {
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.IconCart {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  color: #708db3;
+}
+@media screen and (min-width: 768px) {
+  .IconCart {
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: 25px;
+  }
+}

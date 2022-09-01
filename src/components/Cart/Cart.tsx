@@ -1,5 +1,5 @@
 import { useEffect, useContext } from "react";
-import { IconContext } from "react-icons";
+
 import { RiDeleteBin6Line } from "react-icons/ri";
 import {
   ListStyled,
@@ -10,13 +10,13 @@ import {
   ValueStyled,
   ButtonStyled,
   TotalStyled,
-  iconStyle,
 } from "./Cart.styled";
 import { ICart } from "../../interfaces/Cart.interface";
 import { IProduct } from "../../interfaces/Product.interface";
 import { BasketContext } from "../../context/BasketContextProvider";
 import { getTotal } from "../../helpers/getTotal";
 import Counter from "../Counter";
+import "../../index.css";
 
 const Cart = ({ main }: ICart) => {
   const { basketItems, setBasketItems } = useContext(BasketContext);
@@ -55,9 +55,7 @@ const Cart = ({ main }: ICart) => {
               <PriceStyled main={main}>{price}</PriceStyled>
               <ValueStyled main={main}>${getCost(price, quantity)}</ValueStyled>
               <ButtonStyled id={id} onClick={() => deleteItem(id)}>
-                <IconContext.Provider value={{ style: iconStyle }}>
-                  <RiDeleteBin6Line />
-                </IconContext.Provider>
+                <RiDeleteBin6Line className="IconStyle" />
               </ButtonStyled>
             </ItemStyled>
           ))}

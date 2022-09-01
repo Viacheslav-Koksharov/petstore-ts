@@ -102,14 +102,14 @@ const ProductItem = () => {
                 Please login or register
               </AlertStyle>
             )}
-            <List>
-              <LinkItem to={"description"}>Description</LinkItem>
-              <LinkItem to={"ingredients"}>Ingredients</LinkItem>
-              <LinkItem to={"nutrients"}>Nutrients</LinkItem>
-            </List>
-            <Outlet />
           </TextContainerStyled>
         </ProductContainer>
+        <List>
+          <LinkItem to={"description"}>Description</LinkItem>
+          <LinkItem to={"ingredients"}>Ingredients</LinkItem>
+          <LinkItem to={"nutrients"}>Nutrients</LinkItem>
+        </List>
+        <Outlet />
       </MainStyled>
     </>
   );

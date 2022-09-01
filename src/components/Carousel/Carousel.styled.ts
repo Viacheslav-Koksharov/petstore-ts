@@ -13,7 +13,6 @@ const ListStyled = styled.ul`
     display: flex;
     width: 2000px;
     transition-duration: 500ms;
-
     transition-property: transform;
 `;
 
@@ -22,7 +21,7 @@ const ItemStyled = styled.li`
     justify-content: center;
     width: 140px;
     height: 120px;
-    margin-right: 40px;
+    margin:0 20px;
     padding: 15px;
     border: 1px solid #708db3;
     border-radius: 3px;

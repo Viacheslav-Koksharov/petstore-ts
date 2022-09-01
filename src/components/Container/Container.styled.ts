@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { breakpoints } from "../../helpers/variables";
+
+const { main } = breakpoints;
 
 interface Props {
   main?: boolean;
@@ -13,14 +16,19 @@ const ContainerStyled = styled.div`
   display: ${(props: Props) => (props.flex ? "flex" : "block")};
   justify-content: ${(props: Props) => (props.flex ? "space-between" : "none")};
   align-items: ${(props: Props) => (props.flex ? "center" : "none")};
-  width: ${(props: Props) => (props.carousel ? "680px" : "100%")};
+  width: ${(props: Props) => (props.carousel ? "180px" : "100%")};
   height: ${(props: Props) => (props.background ? "700px" : "auto")};
-  margin: ${(props: Props) => (props.main ? '120px auto 0' : '0')};
+  margin: ${(props: Props) => (props.main ? '100px auto 0' : '0')};
   padding: ${(props: Props) => (props.carousel ? "50px 0" : "0")};
   overflow: ${(props: Props) => (props.carousel ? "hidden" : "visible")};
   background-image: ${(props: Props) => (props.background ? 'url(https://cdn.shopify.com/s/files/1/0252/6642/1869/files/brown-white-dogs.jpg?v=1583726310)' : 'none')};
   background-size: ${(props: Props) => (props.background ? 'cover' : 'auto')};
   z-index: ${(props: Props) => (props.background ? "-1" : "0")};
+
+@media screen and (min-width: ${main.tablet}px){
+  margin: ${(props: Props) => (props.main ? '120px auto 0' : '0')};
+  width: ${(props: Props) => (props.carousel ? "700px" : "100%")};
+ }
 `;
 
 export { ContainerStyled };

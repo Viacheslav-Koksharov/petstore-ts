@@ -1,36 +1,40 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { breakpoints } from "../../helpers/variables";
+
+const { main } = breakpoints;
 
 const NavigationStyled = styled.nav`
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 `;
 
 const LinkStyled = styled(Link)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Text = styled.p`
-  margin: 0;
-  width: 150px;
+  margin: 0 0 0 20px;
   color: #708db3;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
+
+  @media screen and (min-width: ${main.tablet}px) {
+  margin: 0;
+  font-size: 16px;
   text-transform: uppercase;
+}
 `;
 
 const ButtonAccount = styled.button`
   position: relative;
   display: flex;
   padding: 0;
-  margin: 0 0 0 10px;
-  width: 40px;
-  height: 40px;
+  margin: 0;
+  width: 30px;
+  height: 30px;
   color: #708db3;
   border-radius: 50%;
 
@@ -38,15 +42,21 @@ const ButtonAccount = styled.button`
     box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
     transform: scale(1.1);
   }
+@media screen and (min-width: ${main.tablet}px) {
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 20px;
+
+}
 `;
 
 const ButtonCart = styled.button`
-  position: relative;
+ position: relative;
   display: flex;
   padding: 0;
-  margin: 0 0 0 10px;
-  width: 40px;
-  height: 40px;
+  margin: 0 0 0 5px;
+  width: 30px;
+  height: 30px;
   color: #708db3;
   border-radius: 50%;
 
@@ -54,43 +64,39 @@ const ButtonCart = styled.button`
     box-shadow: 0 1px 1px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
     transform: scale(1.1);
   }
+
+@media screen and (min-width: ${main.tablet}px) {
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 20px;
+}
 `;
 
-const iconStyle = {
-  position: 'absolute',
-  top: '20%',
-  left: '15%',
-  margin: '0',
-  padding: '0',
-  width: '25px',
-  height: '25px',
-  color: '#708db3'
+const LogOutButton = styled.button`
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  font-size:12px;
+  color: white;
+  background-color: #708db3;
+  margin: 0 0 0 10px;
+
+@media screen and (min-width: ${main.tablet}px){
+  width: 120px;
+  height: 40px;
+  padding: 10px;
+ margin: 0 0 0 20px;
 }
 
-const accStyle = {
-  position: 'absolute',
-  top: '20%',
-  left: '20%',
-  margin: '0',
-  padding: '0',
-  width: '25px',
-  height: '25px',
-  color: '#708db3'
-}
-
-const button = {
-  width: '120px',
-  height: '40px',
-  padding: '10px',
-  color: 'white',
-  backgroundColor: '#bbb1df',
-  margin: "0 0 0 20px"
-}
+&:hover {
+    transform: scale(1.05);
+  }
+`;
 
 const ContainerCounter = styled.div`
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -15%;
+  right: -10%;
   width: 16px;
   height: 16px;
   line-height: 1;
@@ -108,4 +114,4 @@ const ItemsCounter = styled.small`
 `;
 
 
-export { NavigationStyled, LinkStyled, ButtonAccount, accStyle, ButtonCart, iconStyle, Text, button, ContainerCounter, ItemsCounter };
+export { NavigationStyled, LinkStyled, ButtonAccount, ButtonCart, Text, LogOutButton, ContainerCounter, ItemsCounter };

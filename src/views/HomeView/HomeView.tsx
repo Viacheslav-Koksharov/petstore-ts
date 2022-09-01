@@ -1,5 +1,10 @@
-import { MainStyled, SectionStyled, TaglineStyled, TextStyled } from "./HomeView.styled";
-import Carousel from '../../components/Carousel';
+import {
+  MainStyled,
+  SectionStyled,
+  TaglineStyled,
+  TextStyled,
+} from "./HomeView.styled";
+import Carousel from "../../components/Carousel";
 
 interface Props {
   tagline: string;
@@ -18,7 +23,7 @@ const HomeView = ({ tagline, message, conditions }: Props) => {
         <TextStyled>{conditions}</TextStyled>
       </SectionStyled>
       <SectionStyled flex>
-        <Carousel/>
+        <Carousel />
       </SectionStyled>
     </MainStyled>
   );

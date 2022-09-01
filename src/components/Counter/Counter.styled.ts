@@ -1,13 +1,22 @@
 import styled from "styled-components";
+import { breakpoints } from "../../helpers/variables";
+
+const { main } = breakpoints;
 
 const CounterContainer = styled.fieldset`
-  display:flex;
-  padding: 10px;
-  margin: 0 15px 0 0;
-  max-width:150px;
+display:flex;
+  padding: 5px;
+  margin: 0 5px 0 0;
+ 
   justify-content: center;
   align-items: baseline;
   border-color: rgb(187, 177, 223);
+
+@media screen and (min-width: ${main.tablet}px){
+  padding: 10px;
+  margin: 0 15px 0 0;
+  max-width:150px;
+}
 `;
 
 const LegendStyle = styled.legend`
@@ -29,8 +38,16 @@ padding: 5px;
   }`;
 
 const CounterValue = styled.span`
+margin-right: 4px;
+  margin-left: 4px;
+  font-size: 15px;
+  text-align: center;
+
+  @media screen and (min-width: ${main.tablet}px){
   margin-right: 10px;
   margin-left: 10px;
   font-size: 15px;
-  text-align: center;`;
+}
+  `;
+
 export { CounterContainer, CounterValue, ButtonCounter, LegendStyle };
