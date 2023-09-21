@@ -2,9 +2,9 @@ import {
   FaFacebook,
   FaLinkedin,
   FaInstagram,
-  FaTwitter,
   FaPinterest,
 } from "react-icons/fa";
+import {FaSquareXTwitter} from "react-icons/fa6";
 import {
   FooterStyled,
   TitleStyled,
@@ -67,7 +67,7 @@ const Footer = ({ content }: IProps) => {
               aria-label="twitter"
               target="blank"
             >
-              <FaTwitter className="IconStyle" />
+              <FaSquareXTwitter className="IconStyle" />
             </LinkStyled>
           </ItemStyled>
           <ItemStyled key="pinterest">
